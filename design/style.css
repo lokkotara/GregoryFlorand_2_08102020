@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Raleway;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
