@@ -9,18 +9,18 @@
     <title>Reservia</title>
 </head>
 <body>
-    <header>
+    <header class="MainHeader">
         <img src="../GregoryFlorand_2_08102020/images/Reservia_logo.svg" alt="Logo_reservia">
         <a href="">S'inscrire</a>
         <nav>
             <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
+                <li><a href="#Housing">Hébergements</a></li>
+                <li><a href="#Activities">Activités</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="SearchWrapper">
             <header>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -30,7 +30,7 @@
                 <input type="search" name="SearchBar" id="SearchBar" placeholder="Marseille, France">
                 <button><i class="fas fa-search"></i></button>
             </form>
-            <section>
+            <section class="FilterWrapper">
                 <p>Filtres</p>
                 <filter><i class="fas fa-money-bill-wave"></i> Économique</filter>
                 <filter><i class="fas fa-child"></i> Familial</filter>
@@ -41,9 +41,9 @@
                 <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </footer>
         </section>
-        <section>
+        <section class="Housing" id="Housing">
             <h1>Hébergements à Marseille</h1>
-            <article>
+            <article class="HousingCard">
             <figure><img src="images/auberge_la_cannebiere.jpg"></figure>
             <figcaption><h2>Auberge de la Cannebière</h2>Nuit à partir de <price>25€</price></figcaption>
             <aside>
@@ -55,7 +55,7 @@
             </aside>
             </article>
 
-            <article>
+            <article class="HousingCard">
                 <figure><img src="images/hotel_du_port.jpg"></figure>
                 <figcaption><h2>Hôtel du port</h2>Nuit à partir de <price>52€</price></figcaption>
                 <aside>
@@ -67,7 +67,7 @@
                 </aside>
             </article>
 
-            <article>
+            <article class="HousingCard">
                 <figure><img src="images/hotel_les_mouettes.jpg"></figure>
                 <figcaption><h2>Hôtel Les mouettes</h2>Nuit à partir de <price>76€</price></figcaption>
                 <aside>
@@ -79,7 +79,7 @@
                 </aside>
             </article>
 
-            <article>
+            <article class="HousingCard">
                 <figure><img src="images/hotel_de_la_mer.jpg"></figure>
                 <figcaption><h2>Hotel de la mer</h2>Nuit à partir de <price>46€</price></figcaption>
                 <aside>
@@ -91,7 +91,7 @@
                 </aside>
             </article>
 
-            <article>
+            <article class="HousingCard">
                 <figure><img src="images/auberge_le_panier.jpg"></figure>
                 <figcaption><h2>Auberge Le Panier</h2>Nuit à partir de <price>23€</price></figcaption>
                 <aside>
@@ -103,7 +103,7 @@
                 </aside>
             </article>
 
-            <article>
+            <article class="HousingCard">
                 <figure><img src="images/hotel_chez_amina.jpg"></figure>
                 <figcaption><h2>Hôtel chez Amina</h2>Nuit à partir de <price>96€</price></figcaption>
                 <aside>
@@ -158,7 +158,7 @@
                 </aside>
             </article>
         </aside>
-        <section>
+        <section class="Activities" id="Activities">
             <h1>Activités à Marseille</h1>
             <article>
                 <figure><img src="images/activités/Vieux Port.jpg" alt="" srcset=""></figure>
