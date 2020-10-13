@@ -13,7 +13,7 @@ li {
     list-style: none;
 }
 body {
-    margin: 1.5rem;;
+    margin: 1.3rem;
 }
 /* Header */
 .MainHeader {
@@ -44,11 +44,12 @@ body {
 }
 
 /* Barre de recherche */
+.SearchWrapper {
+    
+}
 .SearchForm {
-    width: 100vw;
-    display: inline-flex;
-    max-width: 100%;
-    overflow: auto;
+    display: flex;
+    margin-top: 2rem;
 }
 .SearchFormIconWrapper {
     background-color:#F2F2F2;
@@ -59,25 +60,28 @@ body {
     -moz-border-radius: 1rem 0 0 1rem;
     -ms-border-radius: 1rem 0 0 1rem;
     -o-border-radius: 1rem 0 0 1rem;
+    width: 15vw;
 }
 .SearchFormBtn {
     background-color: #0065FC;
     color: #FFF;
     cursor: pointer;
     border: none;
-    border-radius: 0 1rem 1rem 0;
-    -webkit-border-radius: 0 1rem 1rem 0;
-    -moz-border-radius: 0 1rem 1rem 0;
-    -ms-border-radius: 0 1rem 1rem 0;
-    -o-border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem ;
+    -webkit-border-radius: 1rem ;
+    -moz-border-radius: 1rem ;
+    -ms-border-radius: 1rem ;
+    -o-border-radius: 1rem ;
     padding: 1rem 1rem;
+    width: 15vw;
 }
 .SearchFormInput {
     border-left: none;
     border-right: none;
-    border-bottom: #F2F2F2 1px solid;
-    border-top: #F2F2F2 1px solid;
+    border-bottom: #0065FC 1px solid;
+    border-top: #0065FC 1px solid;
     padding-left: 1rem;
+    width: 70vw;
 }
 .SearchFormInput::placeholder {
     font-weight: bold; 
@@ -85,7 +89,44 @@ body {
 }
 
 /* Filtres */
-
+.FilterWrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.FilterTitle {
+    font-weight: bold;
+    margin: 0 2rem 1rem 0;
+}
+.FilterFilter i{
+    color: #0065FC;
+    padding: 0.2rem;
+    background-color: #DEEBFF;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.FilterText {
+}
+.FilterFilter {
+    display: inline-flex;
+    border: #F2F2F2 3px solid;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 0.3rem;
+}
+.FilterFooter {
+    margin-bottom: 2rem;
+}
 /* Hébergements */
 .HousingCard {
     display: flex;
