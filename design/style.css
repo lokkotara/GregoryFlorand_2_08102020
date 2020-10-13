@@ -15,7 +15,38 @@ li {
 }
 
 /* Header */
-
+.MainHeader {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr 1fr;
+}
+.MainHeaderLogo {
+    grid: 1/1;
+}
+.MainHeaderSignUp {
+    grid-column: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.MainHeaderNavBar {
+    grid-column: 2/span 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+}
+.MainHeaderNavBar li {
+    display: inline-flex;
+    justify-content: space-between;
+}
+/* .MainHeaderNavBarHousing {
+    grid-column: 2;
+    grid-row: 2;
+}
+.MainHeaderNavBarActivities {
+    grid-column: 3;
+    grid-row: 2;
+} */
 /* Barre de recherche */
 .SearchForm {
     display: inline-flex;
