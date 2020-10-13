@@ -24,29 +24,24 @@ li {
     grid: 1/1;
 }
 .MainHeaderSignUp {
-    grid-column: 4;
+    grid-column: 3;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .MainHeaderNavBar {
-    grid-column: 2/span 2;
+    grid-column: 1/span 3;
     grid-row: 2;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-.MainHeaderNavBar li {
+
+.MainHeaderNavBarLink {
     display: inline-flex;
     justify-content: space-between;
 }
-/* .MainHeaderNavBarHousing {
-    grid-column: 2;
-    grid-row: 2;
-}
-.MainHeaderNavBarActivities {
-    grid-column: 3;
-    grid-row: 2;
-} */
+
 /* Barre de recherche */
 .SearchForm {
     display: inline-flex;
@@ -66,6 +61,7 @@ li {
 .SearchFormBtn {
     background-color: #0065FC;
     color: #FFF;
+    cursor: pointer;
     border: none;
     border-radius: 0 1rem 1rem 0;
     -webkit-border-radius: 0 1rem 1rem 0;
