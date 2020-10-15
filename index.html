@@ -25,14 +25,14 @@
             <form class="SearchForm" role="search">
                 <span class="SearchFormIconWrapper"><i class="fas fa-map-marker-alt"></i></span>
                 <input type="search" name="SearchBar" class="SearchFormInput" placeholder="Marseille, France" aria-label="Rechercher par ville">
-                <button class="SearchFormBtn"><i class="fas fa-search"></i></button>
+                <button class="SearchFormBtn" type="button"><span class="SearchFormBtnText">Rechercher</span> <i class="fas fa-search"></i></button>
             </form>
             <section class="FilterWrapper">
                 <p class="FilterTitle">Filtres</p>
-                <filter class="FilterFilter"><i class="fas fa-money-bill-wave"></i><span class="FilterText"> Économique</span></filter>
-                <filter class="FilterFilter"><i class="fas fa-child"></i><span class="FilterText"> Familial</span></filter>
-                <filter class="FilterFilter"><i class="fas fa-heart"></i><span class="FilterText"> Romantique</span></filter>
-                <filter class="FilterFilter"><i class="fas fa-dog"></i><span class="FilterText"> Animaux autorisés</span></filter>
+                <a href="#"><filter class="FilterFilter"><i class="fas fa-money-bill-wave"></i><span class="FilterText"> Économique</span></filter></a>
+                <a href="#"><filter class="FilterFilter"><i class="fas fa-child"></i><span class="FilterText"> Familial</span></filter></a>
+                <a href="#"><filter class="FilterFilter"><i class="fas fa-heart"></i><span class="FilterText"> Romantique</span></filter></a>
+                <a href="#"><filter class="FilterFilter"><i class="fas fa-dog"></i><span class="FilterText"> Animaux autorisés</span></filter></a>
             </section>
             <footer class="FilterFooter">
                 <p><i class="FilterFooterIcon fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
@@ -41,7 +41,7 @@
         <section class="Housing" id="Housing">
             <h1>Hébergements à Marseille</h1>
             <article class="HousingCard"> <a href="#">
-            <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/auberge_la_cannebiere.jpg"></figure>
+            <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/auberge_la_cannebiere.jpg" alt="Chambre à Marseille" ></figure>
             <figcaption class="HousingCardFigc"><h2 class="HousingCardTitle">Auberge de la Cannebière</h2>Nuit à partir de <price>25€</price></figcaption>
             <aside class="HousingCardStar">
                 <i class="fas fa-star" ></i>
@@ -52,8 +52,8 @@
             </aside></a>
             </article>
 
-            <article class="HousingCard"><a href="#"></a>
-                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_du_port.jpg"></figure>
+            <article class="HousingCard"><a href="#">
+                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_du_port.jpg" alt="Chambre à Marseille" ></figure>
                 <figcaption class="HousingCardFigc"><h2 class="HousingCardTitle">Hôtel du port</h2>Nuit à partir de <price>52€</price></figcaption>
                 <aside class="HousingCardStar">
                     <i class="fas fa-star" ></i>
@@ -64,8 +64,8 @@
                 </aside></a>
             </article>
 
-            <article class="HousingCard"><a href="#"></a>
-                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_les_mouettes.jpg"></figure>
+            <article class="HousingCard"><a href="#">
+                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_les_mouettes.jpg" alt="Chambre à Marseille" ></figure>
                 <figcaption class="HousingCardFigc"><h2 class="HousingCardTitle">Hôtel Les mouettes</h2>Nuit à partir de <price>76€</price></figcaption>
                 <aside class="HousingCardStar">
                     <i class="fas fa-star" ></i>
@@ -76,8 +76,8 @@
                 </aside></a>
             </article>
 
-            <article class="HousingCard"><a href="#"></a>
-                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_de_la_mer.jpg"></figure>
+            <article class="HousingCard"><a href="#">
+                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_de_la_mer.jpg" alt="Chambre à Marseille" ></figure>
                 <figcaption class="HousingCardFigc"><h2 class="HousingCardTitle">Hotel de la mer</h2>Nuit à partir de <price>46€</price></figcaption>
                 <aside class="HousingCardStar">
                     <i class="fas fa-star" ></i>
@@ -88,8 +88,8 @@
                 </aside></a>
             </article>
 
-            <article class="HousingCard"><a href="#"></a>
-                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/auberge_le_panier.jpg"></figure>
+            <article class="HousingCard"><a href="#">
+                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/auberge_le_panier.jpg" alt="Chambre à Marseille" ></figure>
                 <figcaption class="HousingCardFigc"><h2 class="HousingCardTitle">Auberge Le Panier</h2>Nuit à partir de <price>23€</price></figcaption>
                 <aside class="HousingCardStar">
                     <i class="fas fa-star" ></i>
@@ -100,8 +100,8 @@
                 </aside></a>
             </article>
 
-            <article class="HousingCard"><a href="#"></a>
-                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_chez_amina.jpg"></figure>
+            <article class="HousingCard"><a href="#">
+                <figure class="HousingCardFigure"><img class="HousingCardImg" src="images/hotel_chez_amina.jpg" alt="Chambre à Marseille" ></figure>
                 <figcaption class="HousingCardFigc"><h2 class="HousingCardTitle">Hôtel chez Amina</h2>Nuit à partir de <price>96€</price></figcaption>
                 <aside class="HousingCardStar">
                     <i class="fas fa-star" ></i>
@@ -121,8 +121,8 @@
             </header>
             <article class="FavoriteCard">
                 <figure class="FavoriteCardFigure"><img class="FavoriteCardImg" src="images/hotel_le_soleil_du_matin.jpg" alt="" srcset=""></figure>
-                <figcaption><h2>Hôtel Le soleil du matin</h2>Nuit à partir de <price>128€</price></figcaption>
-                <aside>
+                <figcaption class="FavoriteCardFigc"><h2>Hôtel Le soleil du matin</h2>Nuit à partir de <price>128€</price></figcaption>
+                <aside class="FavoriteCardStar">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -132,9 +132,9 @@
             </article>
 
             <article class="FavoriteCard">
-                <figure class="FavoriteCardFigure"><img class="FavoriteCardImg" src="images/au_coeur_de_l_eau.jpg"></figure>
-                <figcaption><h2>Au coeur de l'eau Chambres d'hôtes</h2>Nuit à partir de <price>71€</price></figcaption>
-                <aside>
+                <figure class="FavoriteCardFigure"><img class="FavoriteCardImg" src="images/au_coeur_de_l_eau.jpg" alt="Chambre à Marseille"></figure>
+                <figcaption class="FavoriteCardFigc"><h2>Au coeur de l'eau Chambres d'hôtes</h2>Nuit à partir de <price>71€</price></figcaption>
+                <aside class="FavoriteCardStar">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -144,9 +144,9 @@
             </article>
 
             <article class="FavoriteCard">
-                <figure class="FavoriteCardFigure"><img class="FavoriteCardImg" src="images/hotel_tout_bleu_et_blanc.jpg"></figure>
-                <figcaption><h2>Hôtel Tout bleu et Blanc</h2>Nuit à partir de <price>68€</price></figcaption>
-                <aside>
+                <figure class="FavoriteCardFigure"><img class="FavoriteCardImg" src="images/hotel_tout_bleu_et_blanc.jpg" alt="Chambre à Marseille"></figure>
+                <figcaption class="FavoriteCardFigc"><h2>Hôtel Tout bleu et Blanc</h2>Nuit à partir de <price>68€</price></figcaption>
+                <aside class="FavoriteCardStar">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>

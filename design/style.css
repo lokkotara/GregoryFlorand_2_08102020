@@ -24,6 +24,7 @@ li {
 .fa-star.unchecked {
     color: var(--tertiary-color);
 }
+
 /* Header */
 .MainHeader {
     display: grid;
@@ -65,9 +66,7 @@ li {
 }
 
 /* Barre de recherche */
-.SearchWrapper {
-    
-}
+
 .SearchForm {
     display: flex;
     margin-top: 2rem;
@@ -95,6 +94,9 @@ li {
     -o-border-radius: 1rem ;
     padding: 1rem 1rem;
     width: 3.5rem;
+}
+.SearchFormBtnText {
+    display: none;
 }
 .SearchFormInput {
     border-left: none;
@@ -158,7 +160,7 @@ li {
 }
 .FilterFooterIcon {
     color: var(--primary-color);
-    border:  var(--tertiary-color)2 2px solid;
+    border: var(--tertiary-color) 2px solid;
     border-radius: 50%;
     padding: 0.3rem 0.6rem;
     -webkit-border-radius: 50%;
@@ -176,11 +178,12 @@ li {
     border-radius: 1.25rem;
     box-shadow: 0 0 15px #0000002e;
     margin-bottom: 1rem;
+    height: 200px;
 }
-.HousingCardFigure {
+.HousingCardFigure, .FavoriteCardFigure {
     display: flex;
     margin: 0px;
-    height: 200px;
+    height: 120px;
 }
 .HousingCardImg, .ActivitiesCardImg {
     display: flex;
@@ -196,24 +199,22 @@ li {
 }
 .HousingCardFigc {
     padding-left: 0.5rem;
+    margin-top: 0.5rem;
 }
 .HousingCardTitle {
     font-size: 1rem;
     margin: 0;
 }
 .HousingCardStar {
-    color: var(--tertiary-color);
     padding-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.HousingCardStar [data-active] {
-    color: var(--primary-color);
-}
+
 /* Favoris */
 .Favorite {
     display: flex;
     background-color: var(--tertiary-color);
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     padding: 0.5rem ;
     -webkit-border-radius: 1.25rem;
     -moz-border-radius: 1.25rem;
@@ -226,17 +227,34 @@ li {
 }
 .FavoriteCard {
     display: flex;
-    flex-flow: row wrap;
     border-radius: 1.25rem;
     background-color: white;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 0.5rem;
+    height: 145px;
 }
 .FavoriteCardImg {
     display: flex;
-    width: 33%;
-    position: relative;
-    justify-content: flex-start;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 1.25rem 0 0 1.25rem;
+    -webkit-border-radius: 1.25rem 0 0 1.25rem;
+    -moz-border-radius: 1.25rem 0 0 1.25rem;
+    -ms-border-radius: 1.25rem 0 0 1.25rem;
+    -o-border-radius: 1.25rem 0 0 1.25rem;
+}
+.FavoriteCardFigure {
+    display: flex;
+    margin: 0;
+    max-width: 8rem;
+}
+.FavoriteCardFigc {
+    display: flex;
+    margin: 0;
+}
+.FavoriteCardFigc h2 {
+    display: flex;
+    padding: 0;
 }
 /* Activités */
 
