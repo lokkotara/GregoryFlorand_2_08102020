@@ -60,7 +60,7 @@ li {
     -moz-border-radius: 1rem 0 0 1rem;
     -ms-border-radius: 1rem 0 0 1rem;
     -o-border-radius: 1rem 0 0 1rem;
-    width: 15vw;
+    width: 2rem;
 }
 .SearchFormBtn {
     background-color: #0065FC;
@@ -73,15 +73,16 @@ li {
     -ms-border-radius: 1rem ;
     -o-border-radius: 1rem ;
     padding: 1rem 1rem;
-    width: 15vw;
+    width: 3.5rem;
 }
 .SearchFormInput {
     border-left: none;
     border-right: none;
-    border-bottom: #0065FC 1px solid;
-    border-top: #0065FC 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    border-top: #F2F2F2 1px solid;
     padding-left: 1rem;
-    width: 70vw;
+    margin-right: -1rem;
+    width: 20rem;
 }
 .SearchFormInput::placeholder {
     font-weight: bold; 
@@ -133,6 +134,16 @@ li {
 }
 .FilterFooter {
     margin-bottom: 2rem;
+}
+.FilterFooterIcon {
+    color: #0065FC;
+    border: #F2F2F2 2px solid;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 /* Hébergements */
 .HousingCard {
