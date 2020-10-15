@@ -146,15 +146,38 @@ li {
     -o-border-radius: 50%;
 }
 /* Hébergements */
+.housing {
+    display: flex;
+}
 .HousingCard {
     display: flex;
-    width: 100vw;
+    flex-flow: column wrap;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 15px #0000002e;
+}
+.HousingCardFigure {
+    display: flex;
+    width: 100%;
+    margin: 0px;
 }
 .HousingCardImg, .FavoriteCardImg, .ActivitiesCardImg {
-    object-fit: cover;
-    max-width: 100%;
+    display: flex;
+    border-radius: 1.25rem 1.25rem 0 0;
+    -webkit-border-radius: 1.25rem 1.25rem 0 0;
+    -moz-border-radius: 1.25rem 1.25rem 0 0;
+    -ms-border-radius: 1.25rem 1.25rem 0 0;
+    -o-border-radius: 1.25rem 1.25rem 0 0;
+    width: 100%;
+    justify-content: center;
 }
-
+.HousingCardTitle {
+    margin: 0;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+.HousingCardStar {
+    color: #0065FC;
+}
 /* Favoris */
 .Favorite {
     background-color: #F2F2F2;
