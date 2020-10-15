@@ -23,12 +23,16 @@ li {
 }
 .MainHeaderLogo {
     grid-area: Logo;
+    padding-left: 0.5rem;
 }
 .MainHeaderSignUp {
     grid-area: SignUp;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    color: #0065FC;
+    font-weight: bold;
+    padding-right: 0.5rem;
 }
 .MainHeaderNavBar {
     grid-area: NavBar;
@@ -41,6 +45,12 @@ li {
     display: inline-flex;
     width: 50%;
     justify-content: center;
+    border-bottom: 3px solid #F2F2F2;
+}
+.MainHeaderNavBarLink[data-active=true] {
+    border-bottom-color:#0065FC;
+    color: #0065FC;
+
 }
 
 /* Barre de recherche */
@@ -157,8 +167,8 @@ li {
 }
 .HousingCardFigure {
     display: flex;
-    width: 100%;
     margin: 0px;
+    height: 200px;
 }
 .HousingCardImg, .FavoriteCardImg, .ActivitiesCardImg {
     display: flex;
