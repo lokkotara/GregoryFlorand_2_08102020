@@ -4,6 +4,9 @@ body {
     box-sizing: border-box;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --tertiary-color: #F2F2F2;
 }
 a {
     text-decoration: none;
@@ -14,6 +17,12 @@ li {
 }
 .Main {
     padding: 0 1rem;
+}
+.fa-star {
+    color: var(--primary-color);
+}
+.fa-star.unchecked {
+    color: var(--tertiary-color);
 }
 /* Header */
 .MainHeader {
@@ -30,7 +39,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: #0065FC;
+    color: var(--primary-color);
     font-weight: bold;
     padding-right: 0.5rem;
 }
@@ -45,13 +54,13 @@ li {
     display: inline-flex;
     width: 50%;
     justify-content: center;
-    border-bottom: 3px solid #F2F2F2;
+    border-bottom: 3px solid var(--tertiary-color);
     margin-top: 1rem;
     padding-bottom: 0.5rem;
 }
 .MainHeaderNavBarLink[data-active=true] {
-    border-bottom-color:#0065FC;
-    color: #0065FC;
+    border-bottom-color:var(--primary-color);
+    color: var(--primary-color);
 
 }
 
@@ -64,7 +73,7 @@ li {
     margin-top: 2rem;
 }
 .SearchFormIconWrapper {
-    background-color:#F2F2F2;
+    background-color:var(--tertiary-color);
     border-radius: 1rem 0 0 1rem;
     padding: 1rem 1rem;
     text-align: center;
@@ -75,7 +84,7 @@ li {
     width: 2rem;
 }
 .SearchFormBtn {
-    background-color: #0065FC;
+    background-color: var(--primary-color);
     color: #FFF;
     cursor: pointer;
     border: none;
@@ -90,8 +99,8 @@ li {
 .SearchFormInput {
     border-left: none;
     border-right: none;
-    border-bottom: #F2F2F2 1px solid;
-    border-top: #F2F2F2 1px solid;
+    border-bottom:  var(--tertiary-color) 1px solid;
+    border-top:  var(--tertiary-color) 1px solid;
     padding-left: 1rem;
     margin-right: -1rem;
     width: 20rem;
@@ -114,8 +123,8 @@ li {
     width: 100%;
 }
 .FilterFilter i{
-    color: #0065FC;
-    background-color: #DEEBFF;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     height: 3rem;
     width: 3rem;
     border-radius: 100%;
@@ -133,8 +142,8 @@ li {
 }
 .FilterFilter {
     display: flex;
-    border: #F2F2F2 2px solid;
-    border-left: #DEEBFF;
+    border: var(--tertiary-color) 2px solid;
+    border-left: var(--secondary-color);
     border-radius: 2rem;
     margin-bottom: 1rem;
     margin-right: 0.4rem;
@@ -148,8 +157,8 @@ li {
     margin-bottom: 2rem;
 }
 .FilterFooterIcon {
-    color: #0065FC;
-    border: #F2F2F2 2px solid;
+    color: var(--primary-color);
+    border:  var(--tertiary-color)2 2px solid;
     border-radius: 50%;
     padding: 0.3rem 0.6rem;
     -webkit-border-radius: 50%;
@@ -181,7 +190,9 @@ li {
     -ms-border-radius: 1.25rem 1.25rem 0 0;
     -o-border-radius: 1.25rem 1.25rem 0 0;
     width: 100%;
+    height: auto;
     justify-content: center;
+    object-fit: cover;
 }
 .HousingCardFigc {
     padding-left: 0.5rem;
@@ -191,18 +202,23 @@ li {
     margin: 0;
 }
 .HousingCardStar {
-    color: #F2F2F2;
+    color: var(--tertiary-color);
     padding-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
 .HousingCardStar [data-active] {
-    color: #0065FC;
+    color: var(--primary-color);
 }
 /* Favoris */
 .Favorite {
     display: flex;
-    background-color: #F2F2F2;
+    background-color: var(--tertiary-color);
     flex-flow: column wrap;
+    padding: 0.5rem ;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
 }
 .FavoriteTitle {
     display: flex;
@@ -210,15 +226,18 @@ li {
 }
 .FavoriteCard {
     display: flex;
+    flex-flow: row wrap;
+    border-radius: 1.25rem;
     background-color: white;
     padding: 1rem;
-    width: 90%;
+    margin-bottom: 0.5rem;
 }
 .FavoriteCardImg {
     display: flex;
-    width: 100%;
+    width: 33%;
+    position: relative;
+    justify-content: flex-start;
 }
-
 /* Activités */
 
 /* Footer */
