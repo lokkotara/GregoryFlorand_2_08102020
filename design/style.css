@@ -46,6 +46,8 @@ li {
     width: 50%;
     justify-content: center;
     border-bottom: 3px solid #F2F2F2;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 .MainHeaderNavBarLink[data-active=true] {
     border-bottom-color:#0065FC;
@@ -164,13 +166,14 @@ li {
     flex-flow: column wrap;
     border-radius: 1.25rem;
     box-shadow: 0 0 15px #0000002e;
+    margin-bottom: 1rem;
 }
 .HousingCardFigure {
     display: flex;
     margin: 0px;
     height: 200px;
 }
-.HousingCardImg, .FavoriteCardImg, .ActivitiesCardImg {
+.HousingCardImg, .ActivitiesCardImg {
     display: flex;
     border-radius: 1.25rem 1.25rem 0 0;
     -webkit-border-radius: 1.25rem 1.25rem 0 0;
@@ -180,26 +183,40 @@ li {
     width: 100%;
     justify-content: center;
 }
-.HousingCardTitle {
-    margin: 0;
-    font-size: 1rem;
+.HousingCardFigc {
     padding-left: 0.5rem;
 }
+.HousingCardTitle {
+    font-size: 1rem;
+    margin: 0;
+}
 .HousingCardStar {
+    color: #F2F2F2;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.HousingCardStar [data-active] {
     color: #0065FC;
 }
 /* Favoris */
 .Favorite {
+    display: flex;
     background-color: #F2F2F2;
+    flex-flow: column wrap;
 }
-
+.FavoriteTitle {
+    display: flex;
+    justify-content: space-between;
+}
 .FavoriteCard {
+    display: flex;
     background-color: white;
     padding: 1rem;
     width: 90%;
 }
-.FavoriteCardImg img {
-    object-fit: contain;
+.FavoriteCardImg {
+    display: flex;
+    width: 100%;
 }
 
 /* Activités */
