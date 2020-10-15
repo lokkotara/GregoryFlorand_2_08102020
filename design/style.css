@@ -15,7 +15,7 @@ a {
 li {
     list-style: none;
 }
-.Main {
+main {
     padding: 0 1rem;
 }
 .fa-star {
@@ -180,7 +180,7 @@ li {
     margin-bottom: 1rem;
     height: 200px;
 }
-.HousingCardFigure, .FavoriteCardFigure {
+.HousingCardFigure {
     display: flex;
     margin: 0px;
     height: 120px;
@@ -253,9 +253,29 @@ li {
     margin: 0;
 }
 .FavoriteCardFigc h2 {
-    display: flex;
-    padding: 0;
+    margin: 0;
 }
 /* Activités */
-
+.ActivitiesCard {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 15px #0000002e;
+    margin-bottom: 1rem;
+    height: 200px;
+}
+.ActivitiesCardFigure {
+    display: flex;
+    margin: 0px;
+    height: 120px;
+}
+.ActivitiesCardFigc {
+    display: flex;
+    align-content: center;
+    font-weight: bold;
+    margin: 2rem 0.5rem;
+}
 /* Footer */
+.Footer {
+    background-color: var(--tertiary-color);
+}
