@@ -67,7 +67,33 @@ li {
     border-bottom-color:var(--primary-color);
     color: var(--primary-color);
 }
-
+@media screen and (min-width : 1440px) {
+    .MainHeader {
+        display: grid;
+        grid-template-columns: 66% 1fr 1fr 1fr;
+        grid-template-areas: "Logo NavBar NavBar SignUp";
+        margin-top: 0;
+    }
+    .MainHeaderLogo {
+        display: flex;
+        align-items: flex-end;
+    }
+    .MainHeaderNavBarLink {
+        grid-area: NavBar;
+        border-bottom: none;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 2rem;
+    }
+    .MainHeaderNavBarLink[data-active=true] {
+        border-top: 3px solid var(--primary-color) ;
+        color: var(--primary-color);
+    }
+    .MainHeaderSignUp {
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
 /* Barre de recherche */
 .SearchWrapper {
     margin: 0 1rem;
@@ -117,7 +143,23 @@ li {
     opacity: 1;
     font-size: 1.2rem;
 }
-
+@media screen and (min-width : 1440px) {
+    .SearchFormBtn {
+        width: 8rem;
+        border-radius: 0 1rem 1rem 0;
+        -webkit-border-radius: 0 1rem 1rem 0;
+        -moz-border-radius: 0 1rem 1rem 0;
+        -ms-border-radius: 0 1rem 1rem 0;
+        -o-border-radius: 0 1rem 1rem 0;
+}
+    .SearchFormBtnIcon {
+        display: none !important;
+    }
+    .SearchFormBtnText {
+        display: contents;
+        font-weight: bold;
+    }
+}
 /* Filtres */
 .FilterWrapper {
     display: flex;
@@ -174,7 +216,20 @@ li {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
+@media screen and (min-width : 1440px) {
+    .FilterWrapper {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .FilterTitle {
+        display: flex;
+        width: 4.5rem;
+        align-items: center;
+    }
+    .FilterFilter {
+        margin-right: 1.5rem;
+    }
+}
 /* Hébergements */
 .Hosting {
     order: 2;

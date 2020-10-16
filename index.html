@@ -8,25 +8,29 @@
     <title>Reservia</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="MainHeader">
         <img class="MainHeaderLogo" src="../GregoryFlorand_2_08102020/images/Reservia_logo.svg" alt="Logo_reservia">
         <a class="MainHeaderSignUp" href="#">S'inscrire</a>
         <nav class="MainHeaderNavBar">
-                <a class="MainHeaderNavBarLink" href="#Hosting" data-active="true">Hébergements</a>
-                <a class="MainHeaderNavBarLink" href="#Activities" data-active="false">Activités</a>
+                <a class="MainHeaderNavBarLink HostingLink" href="#Hosting" data-active="true">Hébergements</a>
+                <a class="MainHeaderNavBarLink ActivitiesLink" href="#Activities" data-active="false">Activités</a>
         </nav>
     </header>
+    <!-- Main content heading -->
     <main class="Main">
         <section class="SearchWrapper">
             <header>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </header>
+    <!-- Search bar -->
             <form class="SearchForm" role="search">
                 <span class="SearchFormIconWrapper"><i class="fas fa-map-marker-alt"></i></span>
                 <input type="search" name="SearchBar" class="SearchFormInput" placeholder="Marseille, France" aria-label="Rechercher par ville">
                 <button class="SearchFormBtn" type="button"><span class="SearchFormBtnText">Rechercher</span> <i class="fas fa-search SearchFormBtnIcon"></i></button>
             </form>
+    <!-- Filters -->
             <section class="FilterWrapper">
                 <p class="FilterTitle">Filtres</p>
                 <a href="#"><filter class="FilterFilter"><i class="fas fa-money-bill-wave"></i><span class="FilterText"> Économique</span></filter></a>
@@ -38,6 +42,7 @@
                 <p><i class="FilterFooterIcon fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </footer>
         </section>
+    <!-- Hosting -->
         <div class="MainContentWrapper">
             <section class="Hosting" id="Hosting">
                 <h1>Hébergements à Marseille</h1>
@@ -115,6 +120,7 @@
 
                 <p>Afficher plus</p>
             </section>
+    <!-- Favorite -->
             <aside class="Favorite">
                 <header>
                     <h1 class="FavoriteTitle">Les plus populaires <i class="fas fa-chart-line"></i></h1>
@@ -161,6 +167,7 @@
                         </div></a>
                 </article>
             </aside>
+    <!-- Activities -->
             <section class="Activities" id="Activities">
                 <h1>Activités à Marseille</h1>
                 <article class="ActivitiesCard"> <a href="#VieuxPort">
@@ -193,6 +200,7 @@
                 </article>
             </section>
         </div>
+    <!-- Footer -->
         <footer class="Footer">
             <section>
                 <ul>
