@@ -20,7 +20,13 @@ li {
     display: flex;
     flex-flow: column wrap;
 }
-
+@media screen and(min-width : 1440px) {
+    body {
+    }
+    .MainContentWrapper {
+        margin-left: 3.25rem;
+    }
+}
 /* Réglages étoiles */
 .fa-star {
     color: var(--primary-color);
@@ -333,7 +339,15 @@ li {
 .FavoriteCardStar {
     padding-bottom: 0.5rem;
 }
-
+@media screen and (min-width : 1440px) {
+    .Favorite {
+        width: 25rem;
+    }
+    .Hosting {
+        width: 50rem;
+        order: 0;
+    }
+}
 /* Activités */
 .Activities {
     order: 3;
