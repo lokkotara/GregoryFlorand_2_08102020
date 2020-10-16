@@ -15,9 +15,6 @@ a {
 li {
     list-style: none;
 }
-/* main {
-    padding: 0 1rem;
-} */
 .fa-star {
     color: var(--primary-color);
 }
@@ -30,11 +27,11 @@ li {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
-    
+    margin-top: 2rem;
 }
 .MainHeaderLogo {
     grid-area: Logo;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
 }
 .MainHeaderSignUp {
     grid-area: SignUp;
@@ -43,7 +40,7 @@ li {
     justify-content: flex-end;
     color: var(--primary-color);
     font-weight: bold;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
 }
 .MainHeaderNavBar {
     grid-area: NavBar;
