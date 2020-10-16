@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
@@ -15,9 +15,6 @@ a {
 li {
     list-style: none;
 }
-/* main {
-    padding: 0 1rem;
-} */
 .fa-star {
     color: var(--primary-color);
 }
@@ -30,11 +27,11 @@ li {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
-    
+    margin-top: 2rem;
 }
 .MainHeaderLogo {
     grid-area: Logo;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
 }
 .MainHeaderSignUp {
     grid-area: SignUp;
@@ -43,7 +40,7 @@ li {
     justify-content: flex-end;
     color: var(--primary-color);
     font-weight: bold;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
 }
 .MainHeaderNavBar {
     grid-area: NavBar;
@@ -95,8 +92,8 @@ li {
     -moz-border-radius: 1rem ;
     -ms-border-radius: 1rem ;
     -o-border-radius: 1rem ;
-    padding: 1rem 1rem;
-    width: 3.5rem;
+    padding: 0.5rem 0.5rem;
+    width: 4rem;
 }
 .SearchFormBtnText {
     display: none;
@@ -111,8 +108,9 @@ li {
     width: 20rem;
 }
 .SearchFormInput::placeholder {
-    font-weight: bold; 
+    font-weight: 600; 
     opacity: 1;
+    font-size: 1.2rem;
 }
 
 /* Filtres */
@@ -175,19 +173,19 @@ li {
 .Housing, .FavoriteTitle {
     margin: 0 1rem;
 }
-
 .HousingCard {
     display: flex;
     flex-flow: column wrap;
     border-radius: 1.25rem;
-    box-shadow: 0 0 15px #0000002e;
+    box-shadow: 0 0 1rem #0000002e;
     margin-bottom: 1rem;
-    height: 200px;
+    height: 12.5rem;
+    padding: 0.25rem;
 }
 .HousingCardFigure {
     display: flex;
-    margin: 0px;
-    height: 120px;
+    margin: 0;
+    height: 7.5rem;
 }
 .HousingCardImg, .ActivitiesCardImg {
     display: flex;
@@ -218,12 +216,13 @@ li {
 .Favorite {
     display: flex;
     background-color: var(--tertiary-color);
-    flex-flow: column nowrap;
-    padding: 0.5rem ;
+    flex-flow: column wrap;
+    padding: 2rem 0.5rem ;
 }
 .FavoriteTitle {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 .FavoriteCard {
     display: flex;
@@ -232,10 +231,11 @@ li {
     -ms-border-radius: 1.25rem;
     -o-border-radius: 1.25rem;
     border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
     background-color: white;
-    padding: 0.5rem;
-    margin: 1rem 0.5rem;
-    height: 145px;
+    padding: 0.25rem;
+    margin: 0.5rem 0.5rem;
+    height: 9rem;
 }
 .FavoriteCardImg {
     display: flex;
@@ -252,12 +252,24 @@ li {
     margin: 0;
     max-width: 8rem;
 }
-.FavoriteCardFigc {
+.FavoriteCardWrapper {
     display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    justify-content: space-between;
+}
+.FavoriteCardFigc {
     margin: 0;
+    padding-top: 0.5rem;
 }
 .FavoriteCardFigc h2 {
     margin: 0;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+.FavoriteCardStar {
+    display: inline-flex;
+    padding-bottom: 0.5rem;
 }
 /* Activités */
 .Activities h1{
@@ -267,14 +279,14 @@ li {
     display: flex;
     flex-flow: column wrap;
     border-radius: 1.25rem;
-    box-shadow: 0 0 15px #0000002e;
+    box-shadow: 0 0 1rem #0000002e;
     margin: 1rem;
-    height: 200px;
+    height: 12.5rem;
 }
 .ActivitiesCardFigure {
     display: flex;
     margin: 0px;
-    height: 120px;
+    height: 7.5rem;
 }
 .ActivitiesCardFigc {
     display: flex;
@@ -288,7 +300,9 @@ li {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    padding-left: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+
 }
 .Footer ul{
     padding: 0;
