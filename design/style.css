@@ -172,7 +172,7 @@ li {
     -o-border-radius: 50%;
 }
 /* Hébergements */
-.Housing {
+.Housing, .FavoriteTitle {
     margin: 0 1rem;
 }
 
@@ -285,4 +285,15 @@ li {
 /* Footer */
 .Footer {
     background-color: var(--tertiary-color);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+.Footer ul{
+    padding: 0;
+}
+.Footer li:first-child{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
