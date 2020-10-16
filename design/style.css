@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --tertiary-color: #F2F2F2;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+.fa-star {
+    color: var(--primary-color);
+}
+.fa-star.unchecked {
+    color: var(--tertiary-color);
+}
+
+/* Header */
+.MainHeader {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
+    margin-top: 2rem;
+}
+.MainHeaderLogo {
+    grid-area: Logo;
+    padding-left: 1rem;
+}
+.MainHeaderSignUp {
+    grid-area: SignUp;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.MainHeaderNavBar {
+    grid-area: NavBar;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MainHeaderNavBarLink {
+    display: inline-flex;
+    width: 50%;
+    justify-content: center;
+    border-bottom: 3px solid var(--tertiary-color);
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.MainHeaderNavBarLink[data-active=true] {
+    border-bottom-color:var(--primary-color);
+    color: var(--primary-color);
+
+}
+
+/* Barre de recherche */
+.SearchWrapper {
+    margin: 0 1rem;
+}
+.SearchForm {
+    display: flex;
+    margin-top: 2rem;
+}
+.SearchFormIconWrapper {
+    background-color:var(--tertiary-color);
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    -webkit-border-radius: 1rem 0 0 1rem;
+    -moz-border-radius: 1rem 0 0 1rem;
+    -ms-border-radius: 1rem 0 0 1rem;
+    -o-border-radius: 1rem 0 0 1rem;
+    width: 2rem;
+}
+.SearchFormBtn {
+    background-color: var(--primary-color);
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem ;
+    -webkit-border-radius: 1rem ;
+    -moz-border-radius: 1rem ;
+    -ms-border-radius: 1rem ;
+    -o-border-radius: 1rem ;
+    padding: 0.5rem 0.5rem;
+    width: 4rem;
+}
+.SearchFormBtnText {
+    display: none;
+}
+.SearchFormInput {
+    border-left: none;
+    border-right: none;
+    border-bottom:  var(--tertiary-color) 1px solid;
+    border-top:  var(--tertiary-color) 1px solid;
+    padding-left: 1rem;
+    margin-right: -1rem;
+    width: 20rem;
+}
+.SearchFormInput::placeholder {
+    font-weight: 600; 
+    opacity: 1;
+    font-size: 1.2rem;
+}
+
+/* Filtres */
+.FilterWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.FilterTitle {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    width: 100%;
+}
+.FilterFilter i{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.FilterText {
+    margin: 0 0.6rem;
+    font-weight: bold;
+}
+.FilterFilter {
+    display: flex;
+    border: var(--tertiary-color) 2px solid;
+    border-left: var(--secondary-color);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.4rem;
+    align-items: center;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.FilterFooter {
+    margin-bottom: 2rem;
+}
+.FilterFooterIcon {
+    color: var(--primary-color);
+    border: var(--tertiary-color) 2px solid;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* Hébergements */
+.Housing, .FavoriteTitle {
+    margin: 0 1rem;
+}
+.HousingCard {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
+    margin-bottom: 1rem;
+    height: 12.5rem;
+    padding: 0.25rem;
+}
+.HousingCardFigure {
+    display: flex;
+    margin: 0;
+    height: 7.5rem;
+}
+.HousingCardImg, .ActivitiesCardImg {
+    display: flex;
+    border-radius: 1.25rem 1.25rem 0 0;
+    -webkit-border-radius: 1.25rem 1.25rem 0 0;
+    -moz-border-radius: 1.25rem 1.25rem 0 0;
+    -ms-border-radius: 1.25rem 1.25rem 0 0;
+    -o-border-radius: 1.25rem 1.25rem 0 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    object-fit: cover;
+}
+.HousingCardFigc {
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.HousingCardTitle {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.HousingCardStar {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Favoris */
+.Favorite {
+    display: flex;
+    background-color: var(--tertiary-color);
+    flex-flow: column wrap;
+    padding: 2rem 0.5rem ;
+}
+.FavoriteTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.FavoriteCard {
+    display: flex;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
+    background-color: white;
+    padding: 0.25rem;
+    margin: 0.5rem 0.5rem;
+    height: 9rem;
+}
+.FavoriteCardImg {
+    display: flex;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 1.25rem 0 0 1.25rem;
+    -webkit-border-radius: 1.25rem 0 0 1.25rem;
+    -moz-border-radius: 1.25rem 0 0 1.25rem;
+    -ms-border-radius: 1.25rem 0 0 1.25rem;
+    -o-border-radius: 1.25rem 0 0 1.25rem;
+}
+.FavoriteCardFigure {
+    display: flex;
+    margin: 0;
+    max-width: 8rem;
+}
+.FavoriteCardWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    justify-content: space-between;
+}
+.FavoriteCardFigc {
+    margin: 0;
+    padding-top: 0.5rem;
+}
+.FavoriteCardFigc h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+.FavoriteCardStar {
+    display: inline-flex;
+    padding-bottom: 0.5rem;
+}
+/* Activités */
+.Activities h1{
+    margin: 1rem;
+}
+.ActivitiesCard {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
+    margin: 1rem;
+    height: 12.5rem;
+}
+.ActivitiesCardFigure {
+    display: flex;
+    margin: 0px;
+    height: 7.5rem;
+}
+.ActivitiesCardFigc {
+    display: flex;
+    align-content: center;
+    font-weight: bold;
+    margin: 1.5rem 0.5rem;
+}
+/* Footer */
+.Footer {
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 2rem;
+
+}
+.Footer ul{
+    padding: 0;
+}
+.Footer li:first-child{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
