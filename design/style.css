@@ -15,9 +15,9 @@ a {
 li {
     list-style: none;
 }
-.Main {
+/* main {
     padding: 0 1rem;
-}
+} */
 .fa-star {
     color: var(--primary-color);
 }
@@ -30,6 +30,7 @@ li {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
+    
 }
 .MainHeaderLogo {
     grid-area: Logo;
@@ -66,7 +67,9 @@ li {
 }
 
 /* Barre de recherche */
-
+.SearchWrapper {
+    margin: 0 1rem;
+}
 .SearchForm {
     display: flex;
     margin-top: 2rem;
@@ -169,9 +172,10 @@ li {
     -o-border-radius: 50%;
 }
 /* Hébergements */
-.housing {
-    display: flex;
+.Housing, .FavoriteTitle {
+    margin: 0 1rem;
 }
+
 .HousingCard {
     display: flex;
     flex-flow: column wrap;
@@ -180,7 +184,7 @@ li {
     margin-bottom: 1rem;
     height: 200px;
 }
-.HousingCardFigure, .FavoriteCardFigure {
+.HousingCardFigure {
     display: flex;
     margin: 0px;
     height: 120px;
@@ -203,7 +207,7 @@ li {
 }
 .HousingCardTitle {
     font-size: 1rem;
-    margin: 0;
+    margin: 0.5rem 0;
 }
 .HousingCardStar {
     padding-left: 0.5rem;
@@ -216,10 +220,6 @@ li {
     background-color: var(--tertiary-color);
     flex-flow: column nowrap;
     padding: 0.5rem ;
-    -webkit-border-radius: 1.25rem;
-    -moz-border-radius: 1.25rem;
-    -ms-border-radius: 1.25rem;
-    -o-border-radius: 1.25rem;
 }
 .FavoriteTitle {
     display: flex;
@@ -227,10 +227,14 @@ li {
 }
 .FavoriteCard {
     display: flex;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
     border-radius: 1.25rem;
     background-color: white;
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 1rem 0.5rem;
     height: 145px;
 }
 .FavoriteCardImg {
@@ -253,9 +257,43 @@ li {
     margin: 0;
 }
 .FavoriteCardFigc h2 {
-    display: flex;
-    padding: 0;
+    margin: 0;
 }
 /* Activités */
-
+.Activities h1{
+    margin: 1rem;
+}
+.ActivitiesCard {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 15px #0000002e;
+    margin: 1rem;
+    height: 200px;
+}
+.ActivitiesCardFigure {
+    display: flex;
+    margin: 0px;
+    height: 120px;
+}
+.ActivitiesCardFigc {
+    display: flex;
+    align-content: center;
+    font-weight: bold;
+    margin: 1.5rem 0.5rem;
+}
 /* Footer */
+.Footer {
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+.Footer ul{
+    padding: 0;
+}
+.Footer li:first-child{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
