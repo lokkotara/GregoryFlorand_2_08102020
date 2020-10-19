@@ -405,6 +405,9 @@ filter:hover {
 @media screen and (min-width : 1440px) {
     .Favorite {
         width: 30%;
+        display: grid;
+        grid-template-columns: 4;
+        grid-template-rows: 3;
     }
     
 }
@@ -433,6 +436,38 @@ filter:hover {
     align-content: center;
     margin: 1rem 0.5rem;
     font-size: 0.7rem;
+}
+@media screen and (min-width : 1440px) {
+    .Activities {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
+    }
+    .ActivitiesCard {
+        height: 100%;
+    }
+    .Port {
+        grid-area: Port;
+    }
+    .Fort {
+        grid-area: Fort;
+    }
+    .Calanque {
+        grid-area: Calanque;
+    }
+    .Church {
+        grid-area: Church;
+    }
+    .Isle {
+        grid-area: Isle;
+    }
+    .Park {
+        grid-area: Park;
+    }
+    .ActivitiesCardFigc {
+        align-items: flex-end;
+    }
 }
 /* Footer */
 .Footer {
