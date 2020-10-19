@@ -392,11 +392,10 @@ filter:hover {
 }
 @media screen and (min-width : 1440px) {
     .Favorite {
-        width: 25rem;
+        width: 30%;
     }
     .Hosting {
-        width: 50rem;
-        order: 0;
+        width: 60%;
     }
 }
 /* Activités */
