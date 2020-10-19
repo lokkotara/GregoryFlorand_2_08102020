@@ -209,6 +209,8 @@ li {
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
 }
+.FilterFilter :hover {
+}
 .FilterFooter {
     margin-bottom: 2rem;
 }
