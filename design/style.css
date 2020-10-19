@@ -84,6 +84,7 @@ li {
     .MainHeaderLogo {
         display: flex;
         align-items: flex-end;
+        padding-left: 3.2rem;
     }
     .MainHeaderNavBarLink {
         grid-area: NavBar;
@@ -91,13 +92,13 @@ li {
         margin-top: 0;
         padding-bottom: 0;
         padding-top: 2rem;
+        border-top: 3px solid transparent ;
     }
-    .MainHeaderNavBarLink:[data-active=true] {
+    .MainHeaderNavBarLink[data-active=true] {
         border-color: var(--primary-color) ;
         color: var(--primary-color);
     }
     /* .MainHeaderNavBarLink::before {
-        border-top: 3px solid transparent ;
 
     } */
     .MainHeaderSignUp {
@@ -169,6 +170,9 @@ li {
     .SearchFormBtnText {
         display: contents;
         font-weight: bold;
+    }
+    .SearchWrapper {
+        padding: 0 3.2rem;
     }
 }
 /* Filtres */
@@ -348,7 +352,7 @@ filter:hover {
         flex: 1 1 30%;
     }
     .HostingHeader h1 {
-        margin: 0 50rem 2rem 0;
+        margin: 1rem 40rem 1rem 0;
     }
 }
 /* Favoris */
@@ -422,8 +426,12 @@ filter:hover {
         margin: 0;
         margin-bottom: 2rem;
     }
-    .FavoriteTitle {
-        
+    .FavoriteCardWrapper {
+        display: flex;
+        align-items: space-between;
+    }
+    .FavoriteCardFigc p {
+        margin-top: 0;
     }
 }
 /* Activités */
