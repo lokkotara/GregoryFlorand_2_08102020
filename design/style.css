@@ -20,8 +20,10 @@ li {
     display: flex;
     flex-flow: row wrap;
 }
-@media screen and(min-width : 1440px) {
+@media screen and (min-width : 1440px) {
     .MainContentWrapper {
+        justify-content: space-between;
+        padding: 0 3.2rem;
     }
 }
 /* Réglages étoiles */
@@ -90,13 +92,14 @@ li {
         padding-bottom: 0;
         padding-top: 2rem;
     }
-    .MainHeaderNavBarLink {
-        border-top: 3px solid transparent ;
-    }
-    .MainHeaderNavBarLink[data-active=true] {
-        border-top: 3px solid var(--primary-color) ;
+    .MainHeaderNavBarLink:[data-active=true] {
+        border-color: var(--primary-color) ;
         color: var(--primary-color);
     }
+    /* .MainHeaderNavBarLink::before {
+        border-top: 3px solid transparent ;
+
+    } */
     .MainHeaderSignUp {
         justify-content: center;
         align-items: flex-end;
@@ -335,6 +338,7 @@ filter:hover {
         row-gap: 1rem;
         column-gap: 1rem;
         background-color: var(--tertiary-color);
+        border-radius: 1.25rem;
         padding: 2rem 2.25rem;
     }
     .HostingCardTitle {
@@ -412,6 +416,7 @@ filter:hover {
     .Favorite {
         width: 30%;
         padding: 2rem 2.25rem;
+        border-radius: 1.25rem;
     }
     .FavoriteCard {
         margin: 0;
@@ -451,7 +456,9 @@ filter:hover {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 2fr 2fr;
+        column-gap: 2.25rem;
         grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
+        padding: 2rem 0;
     }
     .ActivitiesCard {
         height: auto;
@@ -492,7 +499,12 @@ filter:hover {
 .Footer ul{
     padding: 0;
 }
-/* .Footer li:first-child{
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-} */
+@media screen and (min-width : 1440px) {
+    .Footer {
+        padding: 2rem 3.20rem;
+        flex-direction: row;
+        padding-right: 32rem;
+        
+        justify-content: flex-evenly;
+    }
+}
