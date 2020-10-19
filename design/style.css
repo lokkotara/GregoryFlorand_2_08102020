@@ -41,10 +41,12 @@ li {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
     margin-top: 2rem;
+    align-items: flex-end;
 }
 .MainHeaderLogo {
     grid-area: Logo;
     padding-left: 1rem;
+    align-items: flex-end;
 }
 .MainHeaderSignUp {
     grid-area: SignUp;
@@ -77,6 +79,7 @@ li {
     .MainHeader {
         display: grid;
         grid-template-columns: 66% 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: "Logo NavBar NavBar SignUp";
         margin-top: 0;
     }
@@ -90,6 +93,9 @@ li {
         margin-top: 0;
         padding-bottom: 0;
         padding-top: 2rem;
+    }
+    .MainHeaderNavBarLink {
+        border-top: 3px solid transparent ;
     }
     .MainHeaderNavBarLink[data-active=true] {
         border-top: 3px solid var(--primary-color) ;
@@ -197,21 +203,39 @@ li {
     font-weight: bold;
 }
 .FilterFilter {
-    display: flex;
-    border: var(--tertiary-color) 2px solid;
-    border-left: var(--secondary-color);
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-    margin-right: 0.4rem;
-    align-items: center;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+ display: flex;
+ border: var(--tertiary-color) 2px solid;
+ border-left: var(--secondary-color);
+ border-radius: 2rem;
+ margin-bottom: 1rem;
+ margin-right: 0.4rem;
+ align-items: center;
+ -webkit-border-radius: 2rem;
+ -moz-border-radius: 2rem;
+ -ms-border-radius: 2rem;
+ -o-border-radius: 2rem;
+ font-weight: bold; 
 }
-.FilterFilter filter :hover {
+filter::before {
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eco::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f007";
+    font-weight: 900;
+}
+filter:hover {
+ background-color: var(--secondary-color);
+ transition-duration: 0.7s;
+ transition-timing-function: ease-out;
+ cursor: pointer;
 }
 .FilterFooter {
     margin-bottom: 2rem;
