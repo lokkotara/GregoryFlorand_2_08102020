@@ -216,6 +216,15 @@ li {
  -o-border-radius: 2rem;
  font-weight: bold; 
 }
+.FilterFilter::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.FilterFilter:hover:before {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 0.3s ease-in;
+}
 filter::before {
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -226,25 +235,39 @@ filter::before {
     align-items: center;
     justify-content: center;
 }
-.eco::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f007";
-    font-weight: 900;
+.FilterFilter::after {
+    width: 0.5rem;
+}
+.Eco::before {
+    content: "\f53a";
+}
+.Family::before {
+    content: "\f1ae";
+}
+.Romantic::before {
+    content: "\f004";
+}
+.Animals::before {
+    content: "\f6d3";
 }
 filter:hover {
  background-color: var(--secondary-color);
- transition-duration: 0.7s;
- transition-timing-function: ease-out;
+ transition: 0.3s ease-in;
  cursor: pointer;
+ border-color: var(--primary-color);
 }
 .FilterFooter {
     margin-bottom: 2rem;
 }
-.FilterFooterIcon {
+.FooterIcon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f129";
+    font-weight: 900;
     color: var(--primary-color);
     border: var(--tertiary-color) 2px solid;
     border-radius: 50%;
     padding: 0.3rem 0.6rem;
+    margin-right: 0.1rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
