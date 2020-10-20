@@ -18,13 +18,12 @@ li {
 }
 .MainContentWrapper {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
 }
-@media screen and(min-width : 1440px) {
-    body {
-    }
+@media screen and (min-width : 1440px) {
     .MainContentWrapper {
-        margin-left: 3.25rem;
+        justify-content: space-between;
+        padding: 0 3.2rem;
     }
 }
 /* Réglages étoiles */
@@ -41,18 +40,17 @@ li {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
     margin-top: 2rem;
-    align-items: flex-end;
+    
 }
 .MainHeaderLogo {
     grid-area: Logo;
-    padding-left: 1rem;
-    align-items: flex-end;
+    padding-left: 1.25rem;
 }
 .MainHeaderSignUp {
     grid-area: SignUp;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     color: var(--primary-color);
     font-weight: bold;
     padding-right: 1rem;
@@ -86,6 +84,7 @@ li {
     .MainHeaderLogo {
         display: flex;
         align-items: flex-end;
+        padding-left: 3.2rem;
     }
     .MainHeaderNavBarLink {
         grid-area: NavBar;
@@ -93,14 +92,15 @@ li {
         margin-top: 0;
         padding-bottom: 0;
         padding-top: 2rem;
-    }
-    .MainHeaderNavBarLink {
         border-top: 3px solid transparent ;
     }
     .MainHeaderNavBarLink[data-active=true] {
-        border-top: 3px solid var(--primary-color) ;
+        border-color: var(--primary-color) ;
         color: var(--primary-color);
     }
+    /* .MainHeaderNavBarLink::before {
+
+    } */
     .MainHeaderSignUp {
         justify-content: center;
         align-items: flex-end;
@@ -108,7 +108,7 @@ li {
 }
 /* Barre de recherche */
 .SearchWrapper {
-    margin: 0 1rem;
+    padding: 0 1.25rem;
 }
 .SearchForm {
     display: flex;
@@ -170,6 +170,9 @@ li {
     .SearchFormBtnText {
         display: contents;
         font-weight: bold;
+    }
+    .SearchWrapper {
+        padding: 0 3.2rem;
     }
 }
 /* Filtres */
@@ -290,10 +293,7 @@ filter:hover {
 /* Hébergements */
 .Hosting {
     order: 2;
-    flex-flow: column wrap;
-}
-.Hosting, .FavoriteTitle {
-    margin: 0 1rem;
+    padding: 2rem 1.25rem;
 }
 .HostingCard {
     border-radius: 1.25rem;
@@ -330,17 +330,41 @@ filter:hover {
     padding-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
+.More {
+    font-weight: bold;
+}
+@media screen and (min-width : 1440px) {
+    .Hosting {
+        display: flex;
+        flex-flow: row wrap;
+        order: 1;
+        width: 60%;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        background-color: var(--tertiary-color);
+        border-radius: 1.25rem;
+        padding: 2rem 2.25rem;
+    }
+    .HostingCardTitle {
+        margin: 0;
+    }
+    .HostingCard {
+        flex: 1 1 30%;
+    }
+    .HostingHeader h1 {
+        margin: 1rem 40rem 1rem 0;
+    }
+}
 /* Favoris */
 .Favorite {
     order: 1;
     background-color: var(--tertiary-color);
-    padding: 2rem 0.5rem ;
+    padding: 2rem 1.25rem ;
 }
 .FavoriteTitle {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin: 1rem 0 2rem 0;
 }
 .FavoriteCard {
     display: flex; 
@@ -352,7 +376,7 @@ filter:hover {
     box-shadow: 0 0 1rem #0000002e;
     background-color: white;
     padding: 0.25rem;
-    margin: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
     height: 9rem;
     justify-content: space-between;
 }
@@ -387,30 +411,41 @@ filter:hover {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
 }
+.FavoriteCardFigc p {
+}
 .FavoriteCardStar {
     padding-bottom: 0.5rem;
 }
 @media screen and (min-width : 1440px) {
     .Favorite {
         width: 30%;
+        padding: 2rem 2.25rem;
+        border-radius: 1.25rem;
     }
-    .Hosting {
-        width: 60%;
+    .FavoriteCard {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .FavoriteCardWrapper {
+        display: flex;
+        align-items: space-between;
+    }
+    .FavoriteCardFigc p {
+        margin-top: 0;
     }
 }
 /* Activités */
 .Activities {
     order: 3;
+    padding: 2rem 1.25rem;
 }
-.Activities h1{
-    margin: 1rem;
-}
+
 .ActivitiesCard {
     display: flex;
     flex-flow: column wrap;
     border-radius: 1.25rem;
     box-shadow: 0 0 1rem #0000002e;
-    margin: 1rem;
+    margin: 1rem 0;
     height: 12.5rem;
 }
 .ActivitiesCardFigure {
@@ -424,19 +459,60 @@ filter:hover {
     margin: 1rem 0.5rem;
     font-size: 0.7rem;
 }
+@media screen and (min-width : 1440px) {
+    .Activities {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr 2fr;
+        column-gap: 2.25rem;
+        grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
+        padding: 2rem 0;
+    }
+    .ActivitiesCard {
+        height: auto;
+    }
+    .Port {
+        grid-area: Port;
+    }
+    .Fort {
+        grid-area: Fort;
+    }
+    .Calanque {
+        grid-area: Calanque;
+    }
+    .Church {
+        grid-area: Church;
+    }
+    .Isle {
+        grid-area: Isle;
+    }
+    .Park {
+        grid-area: Park;
+    }
+    .ActivitiesCardFigure {
+    }
+    .ActivitiesCardFigc {
+        height: 3.4rem;
+    }
+}
 /* Footer */
 .Footer {
     background-color: var(--tertiary-color);
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.25rem;
     margin-top: 2rem;
 }
 .Footer ul{
     padding: 0;
 }
-.Footer li:first-child{
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+@media screen and (min-width : 1440px) {
+    .Footer {
+        padding: 2rem 3.20rem;
+        flex-direction: row;
+        padding-right: 32rem;
+        
+        justify-content: flex-evenly;
+    }
 }
