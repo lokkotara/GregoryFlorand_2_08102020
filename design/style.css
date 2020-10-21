@@ -27,6 +27,7 @@ h1 {
 .MainContentWrapper {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
 }
 @media screen and (min-width : 768px) {
     .MainContentWrapper {
@@ -111,7 +112,6 @@ h1 {
         justify-content: center;
         align-items: flex-end;
     }
-    .Na
 }
 /* Barre de recherche */
 .SearchWrapper {
@@ -373,6 +373,7 @@ filter:hover {
     order: 1;
     background-color: var(--tertiary-color);
     padding: 2rem 1.25rem ;
+    width: 100%;
 }
 .FavoriteTitle {
     display: flex;
@@ -391,10 +392,16 @@ filter:hover {
     padding: 0.25rem;
     margin: 0.5rem 0;
     height: 9rem;
+    max-width: 30.62rem;
     justify-content: space-between;
 }
 .FavoriteCardWrapContainer {
     display: flex;
+}
+.FavoriteWrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
 }
 .FavoriteCardImg {
     width: 8rem;
@@ -436,13 +443,20 @@ filter:hover {
         flex-flow: column wrap;
         width: 40%;
         order: 2;
+        border-radius: 1.25rem;
     }
     .Hosting {
         box-sizing: border-box;
-        flex-wrap: wrap;
         display: flex;
+        flex-wrap: wrap;
         width: 60%;
+        border-radius: 1.25rem;
+        background-color: var(--tertiary-color);
+    }
+    .HostingWrapper {
+        display: flex;
         justify-content: space-around;
+        flex-flow: row wrap;
     }
     .HostingHeader h1{
         width: 100%;
@@ -461,7 +475,6 @@ filter:hover {
     .Favorite {
         width: 30%;
         padding: 2rem 2.25rem;
-        border-radius: 1.25rem;
     }
     .FavoriteCard {
         margin: 0;
