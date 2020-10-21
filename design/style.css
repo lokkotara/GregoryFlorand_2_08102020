@@ -16,6 +16,13 @@ a {
 li {
     list-style: none;
 }
+h1 {
+    font-size: 1.4rem;
+}
+.BodyWrapper {
+    padding-top: 1.63rem;
+}
+
 .MainContentWrapper {
     display: flex;
     flex-flow: row wrap;
@@ -39,7 +46,6 @@ li {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
-    margin-top: 2rem;
     
 }
 .MainHeaderLogo {
@@ -52,7 +58,7 @@ li {
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    font-weight: bold;
+    font-weight: 700;
     padding-right: 1rem;
 }
 .MainHeaderNavBar {
@@ -60,6 +66,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 1rem;
 }
 .MainHeaderNavBarLink {
     display: inline-flex;
@@ -108,7 +115,10 @@ li {
 }
 /* Barre de recherche */
 .SearchWrapper {
-    padding: 0 1.25rem;
+    padding: 0.5rem 1.25rem;
+}
+.SearchWrapper h1 {
+    font-size: 1.4rem;
 }
 .SearchForm {
     display: flex;
@@ -119,6 +129,7 @@ li {
     border-radius: 1rem 0 0 1rem;
     padding: 1rem 1rem;
     text-align: center;
+    font-size: 1.1rem;
     -webkit-border-radius: 1rem 0 0 1rem;
     -moz-border-radius: 1rem 0 0 1rem;
     -ms-border-radius: 1rem 0 0 1rem;
@@ -149,11 +160,13 @@ li {
     padding-left: 1rem;
     margin-right: -1rem;
     width: 20rem;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 .SearchFormInput::placeholder {
     font-weight: 600; 
     opacity: 1;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 @media screen and (min-width : 1440px) {
     .SearchFormBtn {
@@ -207,7 +220,7 @@ li {
 }
 .FilterFilter {
  display: flex;
- border: var(--tertiary-color) 2px solid;
+ border: var(--tertiary-color) 3px solid;
  border-left: var(--secondary-color);
  border-radius: 2rem;
  margin-bottom: 1rem;
@@ -265,7 +278,7 @@ filter:hover {
 .FooterIcon::before {
     font-family: "Font Awesome 5 Free";
     content: "\f129";
-    font-weight: 900;
+    font-weight: 600;
     color: var(--primary-color);
     border: var(--tertiary-color) 2px solid;
     border-radius: 50%;
@@ -275,6 +288,9 @@ filter:hover {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.FooterIcon {
+    display: flex;
 }
 @media screen and (min-width : 1440px) {
     .FilterWrapper {
@@ -332,6 +348,7 @@ filter:hover {
 }
 .More {
     font-weight: bold;
+    padding-top: 1rem;
 }
 @media screen and (min-width : 1440px) {
     .Hosting {
@@ -446,17 +463,17 @@ filter:hover {
     border-radius: 1.25rem;
     box-shadow: 0 0 1rem #0000002e;
     margin: 1rem 0;
-    height: 12.5rem;
+    /* height: 12.5rem; */
 }
 .ActivitiesCardFigure {
     display: flex;
     margin: 0px;
-    height: 7.5rem;
+    height: 7.7rem;
 }
 .ActivitiesCardFigc {
     display: flex;
     align-content: center;
-    margin: 1rem 0.5rem;
+    margin: 0 0.5rem;
     font-size: 0.7rem;
 }
 @media screen and (min-width : 1440px) {
@@ -506,6 +523,12 @@ filter:hover {
 }
 .Footer ul{
     padding: 0;
+}
+.Footer li {
+    padding: 0.5rem 0;
+}
+.Footer h3 {
+    font-size: 1rem;
 }
 @media screen and (min-width : 1440px) {
     .Footer {
