@@ -64,7 +64,7 @@ h1 {
     justify-content: center;
     color: var(--primary-color);
     font-weight: 700;
-    padding-right: 1rem;
+    padding-right: 1.25rem;
 }
 .MainHeaderNavBar {
     grid-area: NavBar;
@@ -115,7 +115,7 @@ h1 {
 }
 /* Barre de recherche */
 .SearchWrapper {
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 3.55%;
 }
 .SearchWrapper h1 {
     font-size: 1.4rem;
@@ -168,7 +168,7 @@ h1 {
     opacity: 1;
     font-size: 1.1rem;
 }
-@media screen and (min-width : 1440px) {
+@media screen and (min-width : 1024px) {
     .SearchFormBtn {
         width: 8rem;
         border-radius: 0 1rem 1rem 0;
@@ -183,9 +183,6 @@ h1 {
     .SearchFormBtnText {
         display: contents;
         font-weight: bold;
-    }
-    .SearchWrapper {
-        padding: 0 3.2rem;
     }
 }
 /* Filtres */
@@ -283,14 +280,12 @@ filter:hover {
     border: var(--tertiary-color) 2px solid;
     border-radius: 50%;
     padding: 0.3rem 0.6rem;
-    margin-right: 0.1rem;
+    margin-right: 0.2rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-}
-.FooterIcon {
-    display: flex;
+    line-height: 1.5rem;
 }
 @media screen and (min-width : 1440px) {
     .FilterWrapper {
