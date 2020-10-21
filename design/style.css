@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     margin: 0;
-    box-sizing: border-box;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     --primary-color: #0065FC;
@@ -20,17 +19,23 @@ h1 {
     font-size: 1.4rem;
 }
 .BodyWrapper {
+    box-sizing: border-box;
     padding-top: 1.63rem;
+    width: 100%;
 }
 
 .MainContentWrapper {
     display: flex;
     flex-flow: row wrap;
 }
-@media screen and (min-width : 1440px) {
+@media screen and (min-width : 768px) {
     .MainContentWrapper {
-        justify-content: space-between;
-        padding: 0 3.2rem;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 1024px) {
+    .BodyWrapper {
+        padding-top: 0;
     }
 }
 /* Réglages étoiles */
@@ -66,7 +71,6 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 1rem;
 }
 .MainHeaderNavBarLink {
     display: inline-flex;
@@ -80,18 +84,16 @@ h1 {
     border-bottom-color:var(--primary-color);
     color: var(--primary-color);
 }
-@media screen and (min-width : 1440px) {
+@media screen and (min-width : 1024px) {
     .MainHeader {
         display: grid;
         grid-template-columns: 66% 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas: "Logo NavBar NavBar SignUp";
         margin-top: 0;
     }
     .MainHeaderLogo {
         display: flex;
-        align-items: flex-end;
-        padding-left: 3.2rem;
+        align-self: flex-end;
     }
     .MainHeaderNavBarLink {
         grid-area: NavBar;
@@ -105,13 +107,11 @@ h1 {
         border-color: var(--primary-color) ;
         color: var(--primary-color);
     }
-    /* .MainHeaderNavBarLink::before {
-
-    } */
     .MainHeaderSignUp {
         justify-content: center;
         align-items: flex-end;
     }
+    .Na
 }
 /* Barre de recherche */
 .SearchWrapper {
@@ -370,6 +370,7 @@ filter:hover {
     }
     .HostingHeader h1 {
         margin: 1rem 40rem 1rem 0;
+        width: 100%;
     }
 }
 /* Favoris */
@@ -432,6 +433,34 @@ filter:hover {
 }
 .FavoriteCardStar {
     padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+    .Favorite {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column wrap;
+        width: 40%;
+        order: 2;
+    }
+    .Hosting {
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+    }
+    .HostingHeader h1{
+        width: 100%;
+    }
+    .HostingCard {
+        width: 45%;
+        box-sizing: border-box;
+    }
+
+    .More, .HostingCardTitle {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 @media screen and (min-width : 1440px) {
     .Favorite {
