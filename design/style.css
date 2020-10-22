@@ -391,10 +391,19 @@ filter:hover {
 @media screen and (min-width: 768px) {
     .MainContentWrapper {
         /* column-gap: 1rem; */
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .MainContentWrapper h1 {
         margin-bottom: 2rem;
+    }
+    .Main {
+        margin: 0 3.55%;
+    }
+    .MainHeaderLogo {
+        padding-left: 3.25rem;
+    }
+    .MainHeaderSignUp {
+        padding-right: 3.25rem;
     }
     .Favorite {
         box-sizing: border-box;
@@ -535,6 +544,7 @@ filter:hover {
         column-gap: 2.25rem;
         grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
         padding: 2rem 0;
+        margin: 0 3.55%;
     }
     .ActivitiesCard {
         height: auto;
