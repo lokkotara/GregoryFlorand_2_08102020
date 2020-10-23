@@ -405,6 +405,9 @@ filter:hover {
     .MainHeaderSignUp {
         padding-right: 3.25rem;
     }
+    .SearchWrapper {
+        padding: 0;
+    }
     .Favorite {
         box-sizing: border-box;
         display: flex;
@@ -444,7 +447,46 @@ filter:hover {
         width: 45%;
         box-sizing: border-box;
     }
-
+    .ActivitiesWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr 2fr;
+        column-gap: 1rem;
+        grid-template-areas: "Port Fort Calanque Church" "Port Isle Calanque Park";
+        /* padding: 2rem 0; */
+    }
+    .ActivitiesCard {
+        height: auto;
+    }
+    .ActivitiesCard a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .Port {
+        grid-area: Port;
+    }
+    .Fort {
+        grid-area: Fort;
+    }
+    .Calanque {
+        grid-area: Calanque;
+    }
+    .Church {
+        grid-area: Church;
+    }
+    .Isle {
+        grid-area: Isle;
+    }
+    .Park {
+        grid-area: Park;
+    }
+    .essai {
+        flex: 1;
+    }
+    .ActivitiesCardFigc {
+        height: 3.4rem;
+    }
     .More, .HostingCardTitle {
         display: flex;
         justify-content: flex-start;
@@ -537,14 +579,13 @@ filter:hover {
     .FavoriteCardFigc p {
         margin-top: 0;
     }
-    .Activities {
+    /* .Activities {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 2fr 2fr;
         column-gap: 2.25rem;
         grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
         padding: 2rem 0;
-        margin: 0 3.55%;
     }
     .ActivitiesCard {
         height: auto;
@@ -577,7 +618,7 @@ filter:hover {
     }
     .ActivitiesCardFigc {
         height: 3.4rem;
-    }
+    } */
     .FilterWrapper {
         flex-wrap: nowrap;
         justify-content: flex-start;
