@@ -306,7 +306,7 @@ filter:hover {
 .Favorite {
     order: 1;
     background-color: var(--tertiary-color);
-    padding: 2rem 1.25rem ;
+    padding: 2rem 3.55% ;
     width: 100%;
 }
 .FavoriteTitle {
@@ -390,7 +390,7 @@ filter:hover {
 }
 .ActivitiesCardFigc {
     display: flex;
-    align-content: center;
+    align-items: center;
     margin: 0 0.5rem;
     font-size: 0.7rem;
 }
@@ -440,7 +440,7 @@ filter:hover {
         display: flex;
         flex-flow: column wrap;
         /* width: 40%; */
-        order: 2;
+        order: 1;
         border-radius: 1.25rem;
         padding: 2rem 0.5rem;
     }
@@ -593,6 +593,7 @@ filter:hover {
         flex: 2;
     }
     .Favorite {
+        order: 2;
         flex: 1;
     }
 }
