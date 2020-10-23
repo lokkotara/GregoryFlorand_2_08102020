@@ -18,10 +18,15 @@ li {
 h1 {
     font-size: 1.4rem;
 }
+.Main {
+    width: 100%;
+}
 .BodyWrapper {
     box-sizing: border-box;
     padding-top: 1.63rem;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .MainContentWrapper {
     display: flex;
@@ -41,7 +46,11 @@ h1 {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
-    
+    flex: 1;
+}
+.MainHeaderLogoLink {
+    display: flex;
+    align-items: flex-end;
 }
 .MainHeaderLogo {
     grid-area: Logo;
@@ -70,8 +79,12 @@ h1 {
     margin-top: 1rem;
     padding-bottom: 0.5rem;
 }
-.MainHeaderNavBarLink[data-active=true] {
+/* .MainHeaderNavBarLink[data-active=true] {
     border-bottom-color:var(--primary-color);
+    color: var(--primary-color);
+} */
+.MainHeaderNavBarLink:hover {
+    border-color: var(--primary-color) ;
     color: var(--primary-color);
 }
 /* Barre de recherche */
@@ -234,19 +247,28 @@ filter:hover {
 /* Hébergements */
 .Hosting {
     order: 2;
-    padding: 2rem 1.25rem;
+    /* padding: 2rem 1.25rem; */
 }
 .HostingCard {
     border-radius: 1.25rem;
     box-shadow: 0 0 1rem #0000002e;
     height: 12.5rem;
     padding: 0.25rem;
+    background-color: #FFF;
+}
+.HostingCardWrapper {
+    flex: 1;
 }
 .HostingWrapper {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1rem;
     row-gap: 1rem;
+}
+.HostingCardWrapContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
 }
 .HostingCardFigure {
     display: flex;
@@ -266,7 +288,7 @@ filter:hover {
 }
 .HostingCardFigc {
     padding-left: 0.5rem;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 .HostingCardTitle {
     font-size: 1rem;
@@ -274,7 +296,7 @@ filter:hover {
 }
 .HostingCardStar {
     padding-left: 0.5rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 .More {
     font-weight: bold;
@@ -284,7 +306,7 @@ filter:hover {
 .Favorite {
     order: 1;
     background-color: var(--tertiary-color);
-    padding: 2rem 1.25rem ;
+    padding: 2rem 3.55% ;
     width: 100%;
 }
 .FavoriteTitle {
@@ -303,19 +325,20 @@ filter:hover {
     padding: 0.25rem;
     margin: 0.5rem 0;
     max-height: 9.12rem;
+    min-width: 20.93rem;
     max-width: 30.62rem;
 }
 .FavoriteCardWrapContainer {
     display: flex;
+    /* align-content: space-between; */
 }
 .FavoriteWrapper {
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
 }
 .FavoriteCardImg {
     width: 8rem;
-    height: 100%;
+    height: 8.13rem;
     max-height: 8.9rem;
     object-fit: cover;
     border-radius: 1.25rem 0 0 1.25rem;
@@ -329,18 +352,20 @@ filter:hover {
     max-width: 8rem;
 }
 .FavoriteCardWrapper {
+    display: flex;
     flex-direction: column;
+    column-gap: 0.5rem;
     padding-left: 0.5rem;
-    justify-content: space-between;
 }
 .FavoriteCardFigc {
     margin: 0;
-    padding-top: 0.5rem;
+    flex: 1;
+    /* padding-top: 0.5rem; */
 }
 .FavoriteCardFigc h2 {
     margin: 0;
     font-size: 1.2rem;
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
 }
 .FavoriteCardStar {
     padding-bottom: 0.5rem;
@@ -365,7 +390,7 @@ filter:hover {
 }
 .ActivitiesCardFigc {
     display: flex;
-    align-content: center;
+    align-items: center;
     margin: 0 0.5rem;
     font-size: 0.7rem;
 }
@@ -377,6 +402,7 @@ filter:hover {
     justify-content: space-between;
     padding: 1.25rem;
     margin-top: 2rem;
+    flex: 1;
 }
 .Footer ul{
     padding: 0;
@@ -390,8 +416,9 @@ filter:hover {
 /* Breakspoints */
 @media screen and (min-width: 768px) {
     .MainContentWrapper {
-        /* column-gap: 1rem; */
-        justify-content: space-between;
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+        /* justify-content: space-between; */
     }
     .MainContentWrapper h1 {
         margin-bottom: 2rem;
@@ -412,15 +439,15 @@ filter:hover {
         box-sizing: border-box;
         display: flex;
         flex-flow: column wrap;
-        width: 40%;
-        order: 2;
+        /* width: 40%; */
+        order: 1;
         border-radius: 1.25rem;
         padding: 2rem 0.5rem;
     }
-    .FavoriteCard {
+    /* .FavoriteCard {
         margin: 0;
         margin-bottom: 2rem;
-    }
+    } */
     .FavoriteTitle, .HostingTitle {
         margin: 0;
     }
@@ -428,7 +455,8 @@ filter:hover {
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        width: 55%;
+        /* width: 55%; */
+        flex: 1.5;
         border-radius: 1.25rem;
         background-color: var(--tertiary-color);
         padding: 2rem 0.5rem;
@@ -489,20 +517,35 @@ filter:hover {
         display: flex;
         justify-content: flex-start;
     }
+    .Footer {
+        padding: 2rem 3.20rem;
+        flex-direction: row;
+        justify-content: flex-evenly;
+    }
+    .FooterColumn {
+        flex: 1;
+    }
 }
 @media screen and (min-width: 1024px) {
     .BodyWrapper {
         padding-top: 0;
+    }
+    .MainContentWrapper {
+        column-gap: 2.50rem;
     }
     .MainHeader {
         display: grid;
         grid-template-columns: 66% 1fr 1fr 1fr;
         grid-template-areas: "Logo NavBar NavBar SignUp";
         margin-top: 0;
+        padding: 0 3.55%;
+        position: sticky;
+        top: 0px;
     }
     .MainHeaderLogo {
         display: flex;
         align-self: flex-end;
+        padding-left: 0;
     }
     .MainHeaderNavBarLink {
         grid-area: NavBar;
@@ -512,13 +555,24 @@ filter:hover {
         padding-top: 2rem;
         border-top: 3px solid transparent ;
     }
-    .MainHeaderNavBarLink[data-active=true] {
+    /* .MainHeaderNavBarLink[data-active=true] {
+        border-color: var(--primary-color) ;
+        color: var(--primary-color);
+    } */
+    .MainHeaderNavBarLink:hover {
         border-color: var(--primary-color) ;
         color: var(--primary-color);
     }
     .MainHeaderSignUp {
         justify-content: center;
         align-items: flex-end;
+        padding-right: 0;
+    }
+    .MainHeaderSignUp:hover {
+        border-top: 3px solid var(--primary-color) ;
+        background-color: var(--secondary-color);
+        background-color: #deebff88;
+        border-radius: 0 0 1.25rem 1.25rem;
     }
     .SearchFormBtn {
         width: 8rem;
@@ -535,6 +589,13 @@ filter:hover {
         display: contents;
         font-weight: bold;
     }
+    .Hosting {
+        flex: 2;
+    }
+    .Favorite {
+        order: 2;
+        flex: 1;
+    }
 }
 @media screen and (min-width: 1440px) {
     .Footer {
@@ -543,6 +604,9 @@ filter:hover {
         padding-right: 32rem;
         
         justify-content: flex-evenly;
+    }
+    .MainContentWrapper {
+        column-gap: 3.25rem;
     }
     .Hosting {
         display: flex;
@@ -568,55 +632,13 @@ filter:hover {
         width: 30%;
         padding: 2rem 2.25rem;
     }
-    .FavoriteCard {
-    }
-    .FavoriteCardWrapper {
+    /* .FavoriteCardWrapper {
         display: flex;
         align-items: space-between;
-    }
+    } */
     .FavoriteCardFigc p {
         margin-top: 0;
     }
-    /* .Activities {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 2fr 2fr;
-        column-gap: 2.25rem;
-        grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
-        padding: 2rem 0;
-    }
-    .ActivitiesCard {
-        height: auto;
-    }
-    .ActivitiesCard a {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    .Port {
-        grid-area: Port;
-    }
-    .Fort {
-        grid-area: Fort;
-    }
-    .Calanque {
-        grid-area: Calanque;
-    }
-    .Church {
-        grid-area: Church;
-    }
-    .Isle {
-        grid-area: Isle;
-    }
-    .Park {
-        grid-area: Park;
-    }
-    .essai {
-        flex: 1;
-    }
-    .ActivitiesCardFigc {
-        height: 3.4rem;
-    } */
     .FilterWrapper {
         flex-wrap: nowrap;
         justify-content: flex-start;
