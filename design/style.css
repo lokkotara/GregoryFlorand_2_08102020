@@ -549,6 +549,11 @@ filter:hover {
     .ActivitiesCard {
         height: auto;
     }
+    .ActivitiesCard a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
     .Port {
         grid-area: Port;
     }
@@ -566,6 +571,9 @@ filter:hover {
     }
     .Park {
         grid-area: Park;
+    }
+    .essai {
+        flex: 1;
     }
     .ActivitiesCardFigc {
         height: 3.4rem;
