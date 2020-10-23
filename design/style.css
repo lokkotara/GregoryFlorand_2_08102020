@@ -48,6 +48,10 @@ h1 {
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
     flex: 1;
 }
+.MainHeaderLogoLink {
+    display: flex;
+    align-items: flex-end;
+}
 .MainHeaderLogo {
     grid-area: Logo;
     padding-left: 1.25rem;
@@ -75,8 +79,12 @@ h1 {
     margin-top: 1rem;
     padding-bottom: 0.5rem;
 }
-.MainHeaderNavBarLink[data-active=true] {
+/* .MainHeaderNavBarLink[data-active=true] {
     border-bottom-color:var(--primary-color);
+    color: var(--primary-color);
+} */
+.MainHeaderNavBarLink:hover {
+    border-color: var(--primary-color) ;
     color: var(--primary-color);
 }
 /* Barre de recherche */
@@ -530,10 +538,14 @@ filter:hover {
         grid-template-columns: 66% 1fr 1fr 1fr;
         grid-template-areas: "Logo NavBar NavBar SignUp";
         margin-top: 0;
+        padding: 0 3.55%;
+        position: sticky;
+        top: 0px;
     }
     .MainHeaderLogo {
         display: flex;
         align-self: flex-end;
+        padding-left: 0;
     }
     .MainHeaderNavBarLink {
         grid-area: NavBar;
@@ -543,13 +555,24 @@ filter:hover {
         padding-top: 2rem;
         border-top: 3px solid transparent ;
     }
-    .MainHeaderNavBarLink[data-active=true] {
+    /* .MainHeaderNavBarLink[data-active=true] {
+        border-color: var(--primary-color) ;
+        color: var(--primary-color);
+    } */
+    .MainHeaderNavBarLink:hover {
         border-color: var(--primary-color) ;
         color: var(--primary-color);
     }
     .MainHeaderSignUp {
         justify-content: center;
         align-items: flex-end;
+        padding-right: 0;
+    }
+    .MainHeaderSignUp:hover {
+        border-top: 3px solid var(--primary-color) ;
+        background-color: var(--secondary-color);
+        background-color: #deebff88;
+        border-radius: 0 0 1.25rem 1.25rem;
     }
     .SearchFormBtn {
         width: 8rem;
