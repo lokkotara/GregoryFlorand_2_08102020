@@ -390,8 +390,8 @@ filter:hover {
 /* Breakspoints */
 @media screen and (min-width: 768px) {
     .MainContentWrapper {
-        /* column-gap: 1rem; */
-        justify-content: space-between;
+        column-gap: 1.5rem;
+        /* justify-content: space-between; */
     }
     .MainContentWrapper h1 {
         margin-bottom: 2rem;
@@ -412,7 +412,8 @@ filter:hover {
         box-sizing: border-box;
         display: flex;
         flex-flow: column wrap;
-        width: 40%;
+        /* width: 40%; */
+        flex: 1;
         order: 2;
         border-radius: 1.25rem;
         padding: 2rem 0.5rem;
@@ -428,7 +429,8 @@ filter:hover {
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        width: 55%;
+        /* width: 55%; */
+        flex: 1.5;
         border-radius: 1.25rem;
         background-color: var(--tertiary-color);
         padding: 2rem 0.5rem;
@@ -489,10 +491,21 @@ filter:hover {
         display: flex;
         justify-content: flex-start;
     }
+    .Footer {
+        padding: 2rem 3.20rem;
+        flex-direction: row;
+        justify-content: flex-evenly;
+    }
+    .FooterColumn {
+        flex: 1;
+    }
 }
 @media screen and (min-width: 1024px) {
     .BodyWrapper {
         padding-top: 0;
+    }
+    .MainContentWrapper {
+        column-gap: 2.50rem;
     }
     .MainHeader {
         display: grid;
@@ -535,6 +548,9 @@ filter:hover {
         display: contents;
         font-weight: bold;
     }
+    .Hosting {
+        flex: 2;
+    }
 }
 @media screen and (min-width: 1440px) {
     .Footer {
@@ -543,6 +559,9 @@ filter:hover {
         padding-right: 32rem;
         
         justify-content: flex-evenly;
+    }
+    .MainContentWrapper {
+        column-gap: 3.25rem;
     }
     .Hosting {
         display: flex;
@@ -568,8 +587,6 @@ filter:hover {
         width: 30%;
         padding: 2rem 2.25rem;
     }
-    .FavoriteCard {
-    }
     .FavoriteCardWrapper {
         display: flex;
         align-items: space-between;
@@ -577,46 +594,6 @@ filter:hover {
     .FavoriteCardFigc p {
         margin-top: 0;
     }
-    /* .Activities {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 2fr 2fr;
-        column-gap: 2.25rem;
-        grid-template-areas: "Titre . . ." "Port Fort Calanque Church" "Port Isle Calanque Park";
-        padding: 2rem 0;
-    }
-    .ActivitiesCard {
-        height: auto;
-    }
-    .ActivitiesCard a {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    .Port {
-        grid-area: Port;
-    }
-    .Fort {
-        grid-area: Fort;
-    }
-    .Calanque {
-        grid-area: Calanque;
-    }
-    .Church {
-        grid-area: Church;
-    }
-    .Isle {
-        grid-area: Isle;
-    }
-    .Park {
-        grid-area: Park;
-    }
-    .essai {
-        flex: 1;
-    }
-    .ActivitiesCardFigc {
-        height: 3.4rem;
-    } */
     .FilterWrapper {
         flex-wrap: nowrap;
         justify-content: flex-start;
