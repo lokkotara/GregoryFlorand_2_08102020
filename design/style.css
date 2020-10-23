@@ -18,6 +18,9 @@ li {
 h1 {
     font-size: 1.4rem;
 }
+.Main {
+    width: 100%;
+}
 .BodyWrapper {
     box-sizing: border-box;
     padding-top: 1.63rem;
@@ -234,7 +237,7 @@ filter:hover {
 /* Hébergements */
 .Hosting {
     order: 2;
-    padding: 2rem 1.25rem;
+    /* padding: 2rem 1.25rem; */
 }
 .HostingCard {
     border-radius: 1.25rem;
@@ -303,19 +306,20 @@ filter:hover {
     padding: 0.25rem;
     margin: 0.5rem 0;
     max-height: 9.12rem;
+    min-width: 20.93rem;
     max-width: 30.62rem;
 }
 .FavoriteCardWrapContainer {
     display: flex;
+    /* align-content: space-between; */
 }
 .FavoriteWrapper {
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
 }
 .FavoriteCardImg {
     width: 8rem;
-    height: 100%;
+    height: 8.13rem;
     max-height: 8.9rem;
     object-fit: cover;
     border-radius: 1.25rem 0 0 1.25rem;
@@ -330,17 +334,17 @@ filter:hover {
 }
 .FavoriteCardWrapper {
     flex-direction: column;
+    column-gap: 0.5rem;
     padding-left: 0.5rem;
-    justify-content: space-between;
 }
 .FavoriteCardFigc {
     margin: 0;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem; */
 }
 .FavoriteCardFigc h2 {
     margin: 0;
     font-size: 1.2rem;
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
 }
 .FavoriteCardStar {
     padding-bottom: 0.5rem;
@@ -418,10 +422,10 @@ filter:hover {
         border-radius: 1.25rem;
         padding: 2rem 0.5rem;
     }
-    .FavoriteCard {
+    /* .FavoriteCard {
         margin: 0;
         margin-bottom: 2rem;
-    }
+    } */
     .FavoriteTitle, .HostingTitle {
         margin: 0;
     }
@@ -587,10 +591,10 @@ filter:hover {
         width: 30%;
         padding: 2rem 2.25rem;
     }
-    .FavoriteCardWrapper {
+    /* .FavoriteCardWrapper {
         display: flex;
         align-items: space-between;
-    }
+    } */
     .FavoriteCardFigc p {
         margin-top: 0;
     }
