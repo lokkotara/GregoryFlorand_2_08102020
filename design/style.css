@@ -196,13 +196,6 @@ h1 {
 .FilterFilter::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-}
-.FilterFilter:hover:before {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    transition: 0.3s ease-in;
-}
-filter::before {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     height: 3rem;
@@ -211,6 +204,11 @@ filter::before {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.FilterFilter:hover:before {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 0.3s ease-in;
 }
 .FilterFilter::after {
     width: 0.5rem;
