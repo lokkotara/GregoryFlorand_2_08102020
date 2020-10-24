@@ -247,7 +247,7 @@ filter:hover {
 /* Hébergements */
 .Hosting {
     order: 2;
-    /* padding: 2rem 1.25rem; */
+    padding: 2rem 1.25rem;
 }
 .HostingCard {
     border-radius: 1.25rem;
@@ -255,6 +255,7 @@ filter:hover {
     height: 12.5rem;
     padding: 0.25rem;
     background-color: #FFF;
+    max-width: 30.62rem;
 }
 .HostingCardWrapper {
     flex: 1;
@@ -373,7 +374,7 @@ filter:hover {
 /* Activités */
 .Activities {
     order: 3;
-    padding: 2rem 1.25rem;
+    padding: 2rem 3.55%;
 }
 .ActivitiesCard {
     display: flex;
