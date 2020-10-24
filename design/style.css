@@ -225,7 +225,7 @@ h1 {
 .Animals::before {
     content: "\f6d3";
 }
-filter:hover {
+.FilterFilter:hover {
  background-color: var(--secondary-color);
  transition: 0.3s ease-in;
  cursor: pointer;
