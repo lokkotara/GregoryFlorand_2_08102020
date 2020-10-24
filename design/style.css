@@ -70,6 +70,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 1rem;
 }
 .MainHeaderNavBarLink {
     display: inline-flex;
@@ -548,12 +549,15 @@ filter:hover {
         align-self: flex-end;
         padding-left: 0;
     }
+    .MainHeaderNavBar {
+        padding-top: 0;
+    }
     .MainHeaderNavBarLink {
         grid-area: NavBar;
         border-bottom: none;
         margin-top: 0;
         padding-bottom: 0;
-        padding-top: 2rem;
+        padding-top: 3rem;
         border-top: 3px solid transparent ;
     }
     /* .MainHeaderNavBarLink[data-active=true] {
@@ -574,6 +578,15 @@ filter:hover {
         background-color: var(--secondary-color);
         background-color: #deebff88;
         border-radius: 0 0 1.25rem 1.25rem;
+    }
+    .SearchWrapper {
+        padding-top: 2rem;
+    }
+    .MainSearchTitle {
+        margin-bottom: 0;
+    }
+    .MainSearchSubTitle {
+        margin-top: 0;
     }
     .SearchFormBtn {
         width: 8rem;
