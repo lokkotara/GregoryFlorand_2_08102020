@@ -1,4 +1,6 @@
+/* Vue Mobile_First */
 /* Réglages généraux */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     margin: 0;
@@ -34,14 +36,18 @@ h1 {
     width: 100%;
     box-sizing: border-box;
 }
+
 /* Réglages étoiles */
+
 .fa-star {
     color: var(--primary-color);
 }
 .fa-star.unchecked {
     color: var(--tertiary-color);
 }
+
 /* Header */
+
 .MainHeader {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -80,15 +86,13 @@ h1 {
     margin-top: 1rem;
     padding-bottom: 0.5rem;
 }
-/* .MainHeaderNavBarLink[data-active=true] {
-    border-bottom-color:var(--primary-color);
-    color: var(--primary-color);
-} */
 .MainHeaderNavBarLink:hover {
     border-color: var(--primary-color) ;
     color: var(--primary-color);
 }
+
 /* Barre de recherche */
+
 .SearchWrapper {
     padding: 0.5rem 3.55%;
 }
@@ -143,7 +147,9 @@ h1 {
     opacity: 1;
     font-size: 1.1rem;
 }
+
 /* Filtres */
+
 .FilterWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +251,9 @@ filter:hover {
     -o-border-radius: 50%;
     line-height: 1.5rem;
 }
+
 /* Hébergements */
+
 .Hosting {
     order: 2;
     padding: 2rem 1.25rem;
@@ -291,7 +299,6 @@ filter:hover {
 }
 .HostingCardFigc {
     padding-left: 0.5rem;
-    /* margin-top: 0.5rem; */
 }
 .HostingCardTitle {
     font-size: 1rem;
@@ -299,13 +306,14 @@ filter:hover {
 }
 .HostingCardStar {
     padding-left: 0.5rem;
-    /* margin-bottom: 0.5rem; */
 }
 .More {
     font-weight: bold;
     padding-top: 1rem;
 }
+
 /* Favoris */
+
 .Favorite {
     order: 1;
     background-color: var(--tertiary-color);
@@ -333,7 +341,6 @@ filter:hover {
 }
 .FavoriteCardWrapContainer {
     display: flex;
-    /* align-content: space-between; */
 }
 .FavoriteWrapper {
     display: flex;
@@ -364,17 +371,17 @@ filter:hover {
 .FavoriteCardFigc {
     margin: 0;
     flex: 1;
-    /* padding-top: 0.5rem; */
 }
 .FavoriteCardFigc h2 {
     margin: 0;
     font-size: 1.2rem;
-    /* padding-bottom: 0.5rem; */
 }
 .FavoriteCardStar {
     padding-bottom: 0.5rem;
 }
+
 /* Activités */
+
 .Activities {
     order: 3;
     padding: 2rem 3.55%;
@@ -385,7 +392,6 @@ filter:hover {
     border-radius: 1.25rem;
     box-shadow: 0 0 1rem #0000002e;
     margin: 1rem 0;
-    /* height: 12.5rem; */
 }
 .ActivitiesCardFigure {
     display: flex;
@@ -398,7 +404,9 @@ filter:hover {
     margin: 0 0.5rem;
     font-size: 0.7rem;
 }
+
 /* Footer */
+
 .Footer {
     background-color: var(--tertiary-color);
     display: flex;
@@ -417,12 +425,14 @@ filter:hover {
 .Footer h3 {
     font-size: 1rem;
 }
+
 /* Breakspoints */
+
+/* Vue Tablette */
 @media screen and (min-width: 768px) {
     .MainContentWrapper {
         column-gap: 1.5rem;
         row-gap: 2rem;
-        /* justify-content: space-between; */
     }
     .MainContentWrapper h1 {
         margin-bottom: 2rem;
@@ -443,15 +453,10 @@ filter:hover {
         box-sizing: border-box;
         display: flex;
         flex-flow: column wrap;
-        /* width: 40%; */
         order: 1;
         border-radius: 1.25rem;
         padding: 2rem 0.5rem;
     }
-    /* .FavoriteCard {
-        margin: 0;
-        margin-bottom: 2rem;
-    } */
     .FavoriteTitle, .HostingTitle {
         margin: 0;
     }
@@ -459,7 +464,6 @@ filter:hover {
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        /* width: 55%; */
         flex: 1.5;
         border-radius: 1.25rem;
         background-color: var(--tertiary-color);
@@ -533,6 +537,8 @@ filter:hover {
         flex: 1;
     }
 }
+
+/* Vue Laptop */
 @media screen and (min-width: 1024px) {
     .BodyWrapper {
         padding-top: 0;
@@ -565,10 +571,6 @@ filter:hover {
         padding-top: 3rem;
         border-top: 3px solid transparent ;
     }
-    /* .MainHeaderNavBarLink[data-active=true] {
-        border-color: var(--primary-color) ;
-        color: var(--primary-color);
-    } */
     .MainHeaderNavBarLink:hover {
         border-color: var(--primary-color) ;
         color: var(--primary-color);
@@ -616,12 +618,13 @@ filter:hover {
         flex: 1;
     }
 }
+
+/* Vue Desktop */
 @media screen and (min-width: 1440px) {
     .Footer {
         padding: 2rem 3.20rem;
         flex-direction: row;
         padding-right: 32rem;
-        
         justify-content: flex-evenly;
     }
     .MainContentWrapper {
@@ -651,10 +654,6 @@ filter:hover {
         width: 30%;
         padding: 2rem 2.25rem;
     }
-    /* .FavoriteCardWrapper {
-        display: flex;
-        align-items: space-between;
-    } */
     .FavoriteCardFigc p {
         margin-top: 0;
     }
