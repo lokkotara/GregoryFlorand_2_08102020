@@ -266,6 +266,7 @@ filter:hover {
     flex-wrap: wrap;
     column-gap: 1rem;
     row-gap: 1rem;
+    justify-content: center;
 }
 .HostingCardWrapContainer {
     display: flex;
@@ -337,6 +338,7 @@ filter:hover {
 .FavoriteWrapper {
     display: flex;
     flex-flow: column wrap;
+    align-content: center;
 }
 .FavoriteCardImg {
     width: 8rem;
@@ -475,6 +477,9 @@ filter:hover {
     .HostingCard {
         width: 45%;
         box-sizing: border-box;
+    }
+    .Activities {
+        padding: 2rem 0;
     }
     .ActivitiesWrapper {
         display: grid;
