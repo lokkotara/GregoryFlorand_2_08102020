@@ -9,6 +9,7 @@ body {
     --primary-color: #0065FC;
     --secondary-color: #DEEBFF;
     --tertiary-color: #F2F2F2;
+    --tertiary-color-alt: #D9D9D9;
 }
 a {
     text-decoration: none;
@@ -43,7 +44,7 @@ h1 {
     color: var(--primary-color);
 }
 .fa-star.unchecked {
-    color: var(--tertiary-color);
+    color: var(--tertiary-color-alt);
 }
 
 /* Header */
@@ -181,7 +182,7 @@ h1 {
 }
 .FilterFilter {
  display: flex;
- border: var(--tertiary-color) 3px solid;
+ border: var(--tertiary-color-alt) 2px solid;
  border-left: var(--secondary-color);
  border-radius: 2rem;
  margin-bottom: 1rem;
@@ -198,8 +199,8 @@ h1 {
     font-weight: 900;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    height: 3rem;
-    width: 3rem;
+    height: 3.125rem;
+    width: 3.125rem;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -239,7 +240,7 @@ h1 {
     content: "\f129";
     font-weight: 600;
     color: var(--primary-color);
-    border: var(--tertiary-color) 2px solid;
+    border: var(--tertiary-color-alt) 1px solid;
     border-radius: 50%;
     padding: 0.3rem 0.6rem;
     margin-right: 0.2rem;
@@ -419,6 +420,10 @@ h1 {
 }
 .Footer li {
     padding: 0.5rem 0;
+}
+
+.Footer li:hover {
+    font-weight: bold;
 }
 .Footer h3 {
     font-size: 1rem;
