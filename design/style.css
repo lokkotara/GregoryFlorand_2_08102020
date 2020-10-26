@@ -432,7 +432,6 @@ price {
 .Footer h3 {
     font-size: 1rem;
 }
-
 /* Breakspoints */
 
 /* Vue Tablette */
@@ -576,6 +575,10 @@ price {
         padding-bottom: 0;
         padding-top: 3rem;
         border-top: 3px solid transparent ;
+    }
+    :target {
+        padding-top: 5.875rem;
+        margin-top: -5.875rem;
     }
     .MainHeaderNavBarLink:hover {
         border-color: var(--primary-color) ;
