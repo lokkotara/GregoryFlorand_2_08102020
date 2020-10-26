@@ -328,6 +328,7 @@ price {
     background-color: var(--tertiary-color);
     padding: 2rem 3.55% ;
     width: 100%;
+    box-sizing: border-box;
 }
 .FavoriteTitle {
     display: flex;
@@ -442,6 +443,13 @@ price {
     font-size: 1rem;
 }
 /* Breakspoints */
+
+/* vue petit mobile */
+@media screen and (max-width: 374px) {
+    .FavoriteCard {
+        min-width: auto;
+    }
+}
 
 /* Vue Tablette */
 @media screen and (min-width: 768px) {
