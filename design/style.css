@@ -57,6 +57,7 @@ price {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
     flex: 1;
+    background-color: #FFF;
 }
 .MainHeaderLogoLink {
     display: flex;
@@ -88,7 +89,7 @@ price {
     justify-content: center;
     border-bottom: 3px solid var(--tertiary-color);
     margin-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 .MainHeaderNavBarLink:hover {
     border-color: var(--primary-color) ;
@@ -537,7 +538,6 @@ price {
     .Footer {
         padding: 2rem 3.20rem;
         flex-direction: row;
-        justify-content: flex-evenly;
     }
     .FooterColumn {
         flex: 1;
@@ -557,7 +557,7 @@ price {
         grid-template-columns: 66% 1fr 1fr 1fr;
         grid-template-areas: "Logo NavBar NavBar SignUp";
         margin-top: 0;
-        padding: 0 3.55%;
+        padding: 0 3.55% 1.5rem;
         position: sticky;
         top: 0px;
     }
@@ -585,12 +585,14 @@ price {
         justify-content: center;
         align-items: flex-end;
         padding-right: 0;
+        transition: padding-bottom 0.5s ease-out;
     }
     .MainHeaderSignUp:hover {
         border-top: 3px solid var(--primary-color) ;
         background-color: var(--secondary-color);
         background-color: #deebff88;
         border-radius: 0 0 1.25rem 1.25rem;
+        padding-bottom: 1.5rem;
     }
     .SearchWrapper {
         padding-top: 2rem;
@@ -638,7 +640,6 @@ price {
         padding: 2rem 3.20rem;
         flex-direction: row;
         padding-right: 32rem;
-        justify-content: flex-evenly;
     }
     .MainContentWrapper {
         column-gap: 3.25rem;
