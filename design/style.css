@@ -58,7 +58,13 @@ price {
     grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
     flex: 1;
     background-color: #FFF;
+    position: sticky;
+    top: 0;
 }
+/* :target {
+    padding-top: 7.19rem;
+    margin-top: -7.19rem;
+} */
 .MainHeaderLogoLink {
     display: flex;
     align-items: flex-end;
@@ -407,7 +413,10 @@ price {
     margin: 0 0.5rem;
     font-size: 0.7rem;
 }
-
+:target {
+    padding-top: 7.19rem;
+    margin-top: -7.19rem;
+}
 /* Footer */
 
 .Footer {
@@ -490,6 +499,10 @@ price {
     }
     .Activities {
         padding: 2rem 0;
+    }
+    :target {
+        padding-top: 7.19rem;
+        margin-top: -7.19rem;
     }
     .ActivitiesWrapper {
         display: grid;
