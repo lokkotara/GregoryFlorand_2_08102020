@@ -604,6 +604,7 @@ h1 {
     .SearchFormBtn {
         width: 8rem;
         border-radius: 0 1rem 1rem 0;
+    }
     .SearchFormBtnIcon {
         display: none !important;
     }
