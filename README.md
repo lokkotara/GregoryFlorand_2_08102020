@@ -15,10 +15,13 @@ Mon travail consiste à intégrer la maquette graphique en utilisant uniquement 
 ## Présentation - Les maquettes
 Pour mener à bien ce projet, Nous sommes partis de deux maquettes :
 1. Une version "**Desktop**" pour un affichage sur des écrans à partir de *1440px*
-![Maquette Desktop](./images/Readme/MockUp_Desktop.png)
+
+
+<p align="center"><img src="./images/Readme/MockUp_Desktop.png" alt="Mock Up version Desktop"></p>
 
 1. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px*
-![Maquette Desktop](./images/Readme/MockUp_Mobile.png)
+
+<p align="center"><img src="./images/Readme/MockUp_Mobile.png" alt="Mock Up version Mobile"></p>
 
 De plus, il est demandé d'intégrer une mise en page responsive pour les tablettes, plus libre.
 
