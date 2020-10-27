@@ -1,6 +1,7 @@
-![Reservia](./images/Readme/Reservia_logo.png)
+<div style="text-align:center"><img src="./images/Readme/Reservia_logo.png" alt="Reservia"></div> 
 
-# Projet 2 - 
+<h1 align="center">projet 2</h1>
+ 
 
 ## Introduction - Quezaco ?
 
