@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="./images/Readme/Reservia_logo.png" alt="Reservia"></div> 
+<p align="center"><img src="./images/Readme/Reservia_logo.png" alt="Reservia"></p> 
 
 <h1 align="center">projet 2</h1>
  
