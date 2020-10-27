@@ -1,5 +1,4 @@
-<h1><center>Projet 2 - ![Reservia](https://sendeyo.com/show/b3d6dec1a7)</center></h1>
-
+# Projet 2 - ![Reservia](./images/logo/reservia.svg)
 
 ## Introduction - Quezaco ?
 
