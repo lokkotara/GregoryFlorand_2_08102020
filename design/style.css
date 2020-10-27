@@ -61,10 +61,6 @@ h1 {
     position: sticky;
     top: 0;
 }
-/* :target {
-    padding-top: 7.19rem;
-    margin-top: -7.19rem;
-} */
 .MainHeaderLogoLink {
     display: flex;
     align-items: flex-end;
@@ -138,6 +134,12 @@ h1 {
     -o-border-radius: 1rem ;
     padding: 0.5rem 0.5rem;
     width: 4rem;
+    transition:  background-position 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.2s linear;
+}
+.SearchFormBtn:hover {
+    transform: scale(1.1);
+    background-position: -3.75rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .SearchFormBtnText {
     display: none;
@@ -446,6 +448,9 @@ h1 {
 
 /* vue petit mobile */
 @media screen and (max-width: 374px) {
+    .SearchFormInput {
+        padding-left: 0;
+    }
     .FavoriteCard {
         min-width: auto;
     }
