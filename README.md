@@ -1,4 +1,4 @@
-![Reservia](./images/readme/Reservia_logo.png)
+![Reservia](./images/Readme/Reservia_logo.png)
 
 # Projet 2 - 
 
