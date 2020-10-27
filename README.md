@@ -1,4 +1,4 @@
-# Projet 2 - ![Reservia](./images/logo/reservia.svg)
+# Projet 2 - ![Reservia](./images/logo/Reservia_logo.svg)
 
 ## Introduction - Quezaco ?
 
