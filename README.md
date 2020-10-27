@@ -9,13 +9,47 @@
 
 Dans ce scénario, je suis stagiaire dans une entreprise qui propose un outil de planification de vacances.
 
-Mon travail consiste à intégrer la maquette graphique en utilisant uniquement *HTML* et *CSS*, mais avant toute chose, voyons en quoi il consiste.
+Mon travail consiste à intégrer la maquette graphique en utilisant uniquement *HTML* et *CSS*, mais avant toute chose, voyons en quoi cela consiste.
 
 ***************
 ## Présentation - Les maquettes
-Pour mener à bien ce projet, Nous sommes partis sur deux maquettes :
+Pour mener à bien ce projet, Nous sommes partis de deux maquettes :
 1. Une version "**Desktop**" pour un affichage sur des écrans à partir de *1440px*
 ![Maquette Desktop](./images/Readme/MockUp_Desktop.png)
-1. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px* comme l'iPhone 8.
+
+1. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px*
 ![Maquette Desktop](./images/Readme/MockUp_Mobile.png)
 
+De plus, il est demandé d'intégrer une mise en page responsive pour les tablettes, plus libre.
+
+**************************
+
+## Détails techniques - Les contraintes
+ Voici une liste des points techniques abordés dans le briefing et qui doivent figurés dans notre projet
+ * Les balises sémantiques doivent être utilisées
+ * Le code doit être versionné. J'ai donc utilisé GitHub
+ * La charte graphique se compose des trois couleurs suivantes :
+    * *Bleu* = #0065FC
+    * *Bleu Claire* = #DEEBFF
+    * *Gris* (arrière-plan) = #F2F2F2
+* La police du site est **Raleway**
+* Les icônes proviennent de la bibliotèque **Font Awesome**
+* Chaque carte d'hébergement ou d'activité doit être cliquable dans son intégralité.
+* Dans le menu, "Hébergmements" et"Activités" sont des ancres menant aux sections correspondantes.
+* Le champ de recherche doit être éditable.
+* Bien que non fonctionnels pour le moment, les filtres doivent changer d'apparence au survol.
+* La taille des photos doit être choisie pour assurer une résolution suffisante et un temps de chargement le plus court possible.
+* Le code ne doit présenter aucune erreur au validateur W3C
+Il est fortement recommander d'utiliser au choix Flexbox et Grid
+
+************************
+
+## Évaluation - Les critères
+Les quatre points principaux sur lesquels va s'axer l'évalutation de ma soutenance sont :
+* Le respect des maquettes lors de l'intégration
+* La faculté à se servir de son éditeur et des ses outils de test
+La cappacité à utiliser GitHub pour versionner mon projet
+* Faire en sorte que l'interface soit responsive
+
+## Conclusion - Les remerciements
+Enfin, pour clore cette présentation, j'aimerais remercier mon mentor qui a toujours le mot qu'il faut pour détecter un point sur lequel je pourrais bloquer et y apporter une réponse claire ainsi que mes partenaires lors de cette formation qui me permettent de me dépasser. C'est grâce à eux que je peux avancer et monter en compétence.
