@@ -19,7 +19,7 @@ Pour mener à bien ce projet, Nous sommes partis de deux maquettes :
 
 <p align="center"><img src="./images/Readme/MockUp_Desktop.png" alt="Mock Up version Desktop"></p>
 
-1. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px*
+2. Une version "**Mobile**" pour un affichage sur les écrans de smartphone de *375px*
 
 <p align="center"><img src="./images/Readme/MockUp_Mobile.png" alt="Mock Up version Mobile"></p>
 
