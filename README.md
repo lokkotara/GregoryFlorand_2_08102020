@@ -38,7 +38,7 @@ De plus, il est demandé d'intégrer une mise en page responsive pour les tablet
 * La police du site est **Raleway**
 * Les icônes proviennent de la bibliotèque **Font Awesome**
 * Chaque carte d'hébergement ou d'activité doit être cliquable dans son intégralité.
-* Dans le menu, "Hébergmements" et"Activités" sont des ancres menant aux sections correspondantes.
+* Dans le menu, "Hébergements" et"Activités" sont des ancres menant aux sections correspondantes.
 * Le champ de recherche doit être éditable.
 * Bien que non fonctionnels pour le moment, les filtres doivent changer d'apparence au survol.
 * La taille des photos doit être choisie pour assurer une résolution suffisante et un temps de chargement le plus court possible.
@@ -51,7 +51,7 @@ Il est fortement recommander d'utiliser au choix Flexbox et Grid
 Les quatre points principaux sur lesquels va s'axer l'évalutation de ma soutenance sont :
 * Le respect des maquettes lors de l'intégration
 * La faculté à se servir de son éditeur et des ses outils de test
-La cappacité à utiliser GitHub pour versionner mon projet
+* La capacité à utiliser GitHub pour versionner mon projet
 * Faire en sorte que l'interface soit responsive
 
 ## Conclusion - Les remerciements
