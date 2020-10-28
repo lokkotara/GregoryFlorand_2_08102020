@@ -55,4 +55,8 @@ Les quatre points principaux sur lesquels va s'axer l'évalutation de ma soutena
 * Faire en sorte que l'interface soit responsive
 
 ## Conclusion - Les remerciements
-Enfin, pour clore cette présentation, j'aimerais remercier mon mentor qui a toujours le mot qu'il faut pour détecter un point sur lequel je pourrais bloquer et y apporter une réponse claire ainsi que mes partenaires lors de cette formation qui me permettent de me dépasser. C'est grâce à eux que je peux avancer et monter en compétence.
+Enfin, pour clore cette présentation, j'aimerais remercier mon mentor qui a toujours le mot qu'il faut. 
+
+Il détecte un point sur lequel je pourrais bloquer et y apporte une réponse claire.
+
+Je remercie également mes partenaires lors de cette formation, qui me permettent de me dépasser. C'est grâce à eux que je peux avancer et monter en compétence.
