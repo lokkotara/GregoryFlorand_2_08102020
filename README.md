@@ -13,7 +13,7 @@ Mon travail consiste à intégrer la maquette graphique en utilisant uniquement 
 
 ***************
 ## Présentation - Les maquettes
-Pour mener à bien ce projet, Je suis parti de deux maquettes :
+Pour mener à bien ce projet, je suis parti de deux maquettes :
 1. Une version "**Desktop**" pour un affichage sur des écrans à partir de *1440px*
 
 
