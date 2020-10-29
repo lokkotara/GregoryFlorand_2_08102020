@@ -13,7 +13,7 @@ Mon travail consiste à intégrer la maquette graphique en utilisant uniquement 
 
 ***************
 ## Présentation - Les maquettes
-Pour mener à bien ce projet, Nous sommes partis de deux maquettes :
+Pour mener à bien ce projet, Je suis parti de deux maquettes :
 1. Une version "**Desktop**" pour un affichage sur des écrans à partir de *1440px*
 
 
@@ -52,7 +52,7 @@ Les quatre points principaux sur lesquels va s'axer l'évalutation de ma soutena
 * Le respect des maquettes lors de l'intégration
 * La faculté à se servir de son éditeur et des ses outils de test
 * La capacité à utiliser GitHub pour versionner mon projet
-* Faire en sorte que l'interface soit responsive
+* Mettre en place une interface responsive
 
 ## Conclusion - Les remerciements
 Enfin, pour clore cette présentation, j'aimerais remercier mon mentor qui a toujours le mot qu'il faut. 
