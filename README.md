@@ -43,7 +43,7 @@ De plus, il est demandé d'intégrer une mise en page responsive pour les tablet
 * Bien que non fonctionnels pour le moment, les filtres doivent changer d'apparence au survol.
 * La taille des photos doit être choisie pour assurer une résolution suffisante et un temps de chargement le plus court possible.
 * Le code ne doit présenter aucune erreur au validateur W3C
-Il est fortement recommander d'utiliser au choix Flexbox et Grid
+Il est fortement recommander d'utiliser au choix Flexbox et Grid.
 
 ************************
 
